@@ -166,26 +166,17 @@ input{
     /* INDEX MEDIA TABLET */
 
     @media screen and (min-width:768px){
-       
-        
-        .contenedor-logo{
-            display: grid;
-            grid-template-columns: 20% 80%;
-            grid-template-rows: 80%;
-            align-content: center;
-        }
+       .contenedor-logo{
+           display: grid;
+           grid-template-columns: 20% 80%;
+           grid-template-rows: 80%;
+           align-items: center;
+       }      
 
-        .logo{
-            display: flex;
-        }
-        .menu li{
-            display: inline-block;
-        }
-
-        .navegacion{
-            display: flex;
-            justify-content: flex-end;
-        }
+       .navegacion{
+           display: flex; 
+           justify-content: flex-end;
+       }
 
         
 
@@ -231,7 +222,14 @@ input{
             display: grid;
             grid-template-columns: 20% 80%;
             grid-template-rows: 80%;
+            align-items: center;
+        }      
+ 
+        .navegacion{
+            display: flex; 
+            justify-content: flex-end;
         }
+ 
        
        
         .contenedor{
