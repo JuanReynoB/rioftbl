@@ -1,6 +1,6 @@
 
 body{
-    background-image: linear-gradient(black,grey);
+    background-color: black;
     font-family: 'Montserrat Alternates', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
@@ -269,15 +269,13 @@ input{
             filter: opacity(0.5);
         }
        
-        .portada-femenino:hover{
-            filter: opacity(0.5);
-        }
-
-        .portada-masculino:hover{
+        .imagen-femenino:hover{
             filter: opacity(0.5);
         }
  
-       
+       .imagen-masculino:hover{
+           filter: opacity(0.5);
+       }
        
         .contenedor{
         grid-template-columns: 100%;
@@ -388,6 +386,9 @@ input{
             grid-area: redes;
         }
         
+        .portada-femenino:hover{
+            filter: opacity(0.5);
+        }
     }
 
 
