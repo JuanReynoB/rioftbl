@@ -11,6 +11,10 @@ body{
     justify-content: center;
 }
 
+.r{
+    color: 
+}
+
 .navegacion{
     display: flex;
     justify-content: center; 
@@ -21,7 +25,7 @@ body{
     justify-content: center;
     padding: 5px;
     transform: translate(-20px);
-}
+    }
 
 .imagen-portada{
     width:100%;
@@ -234,6 +238,45 @@ input{
 
         .menu li{
         transform: translate(-20px);
+        }
+
+        .menu li :hover {
+            background-color: white;
+            color: black;
+        }
+
+        .h2-informacion:hover{
+            font-size: 50px;
+            background-color: #ffd700;
+            color: white;
+        }
+        
+        .h2-femenino:hover{
+            font-size: 50px;
+            background-color: rgb(1, 1, 105);
+            color: white;
+        }
+
+        .h2-masculino:hover{
+            font-size: 50px;
+            background-color: rgb(1, 102, 1);
+            color: white;
+        }
+
+        .imagen-portada:hover{
+            filter: opacity(0.5);
+        }
+
+        .imagen-banner:hover{
+            filter: opacity(0.5);
+        }
+       
+        .portada-femenino:hover{
+            filter: opacity(0.5);
+        }
+
+        .portada-masculino:hover{
+            filter: opacity(0.5);
         }
  
        
