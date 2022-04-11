@@ -8,7 +8,7 @@ body{
 
 .logo{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .navegacion{
@@ -56,17 +56,10 @@ body{
     width: 100%;
 }
 
-.navegacion{
-    display: flex;
-    justify-content: center; 
-}
-
-.menu li{
-    display: flex;
+.contenedor-posiciones-femenino{
+    display: grid;
     justify-content: center;
-    padding: 5px;
 }
-
 
 h1{
    
@@ -133,11 +126,7 @@ input{
     width: 100%;
 }
 
-.posiciones-femenino{
-    display:flex;
-    justify-items: center;
-}
-    
+   
 
 /*INDEX GRID AREA*/
 
@@ -146,7 +135,7 @@ input{
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-areas: 
-        "navegacion"
+        "header"
         "portada"
         "banner"
         "femenino"
@@ -156,7 +145,7 @@ input{
     }
 
     .header{
-        grid-area: navegacion;
+        grid-area: header;
     }
     .main{
         grid-area: portada;
@@ -177,10 +166,34 @@ input{
     /* INDEX MEDIA TABLET */
 
     @media screen and (min-width:768px){
+       
+        
+        .contenedor-logo{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 80%;
+            align-content: center;
+        }
+
+        .logo{
+            display: flex;
+        }
+        .menu li{
+            display: inline-block;
+        }
+
+        .navegacion{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        
+
+       
         .contenedor{
         grid-template-columns: 100%;
         grid-template-areas: 
-        "navegacion"
+        "header"
         "portada"
         "banner"
         "femenino"
@@ -190,7 +203,7 @@ input{
         }
         
         .header{
-            grid-area: navegacion;
+            grid-area: header;
         }
         .main{
             grid-area:portada;
@@ -207,27 +220,24 @@ input{
         .footer{
             grid-area: redes;
         }
-        .navegacion{
-            display: flex;
-            justify-content: center;
-            
-        }
         
-        .menu li{
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
         
     }
         
     /* INDEX MEDIA DESKTOP */
 
     @media screen and (min-width:1024px){
+        .contenedor-logo{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 80%;
+        }
+       
+       
         .contenedor{
         grid-template-columns: 100%;
         grid-template-areas: 
-        "navegacion"
+        "header"
         "portada"
         "banner"
         "femenino"
@@ -237,7 +247,7 @@ input{
         }
         
         .header{
-            grid-area: navegacion;
+            grid-area: header;
         }
         .main{
             grid-area:portada;
@@ -254,17 +264,7 @@ input{
         .footer{
             grid-area: redes;
         }
-        .navegacion{
-            display: flex;
-            align-items: center;
-            
-        }
         
-        .menu li{
-            display: flex;
-            align-items: center;
-            padding: 10px;
-        }
         
     }
         
@@ -306,6 +306,16 @@ input{
     /* FEMENINO MEDIA TABLET */
 
     @media screen and (min-width:768px){
+        .contenedor-logo{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 80%;
+        }
+
+        .menu li{
+            display: inline-block;
+        }
+        
         .contenedor-femenino{
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -332,16 +342,7 @@ input{
         .footer-femenino{
             grid-area: redes;
         }
-        .navegacion-femenino{
-            display: flex;
-            justify-content: center;
-        }
         
-        .menu li{
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
     }
 
 
@@ -373,17 +374,6 @@ input{
         }
         .footer-femenino{
             grid-area: redes;
-        }
-        .navegacion-femenino{
-            display: inline-block;
-            position: relative;
-            margin-left: 400px;
-        }
-        
-        .menu li{
-            display: inline-block;
-            position: relative;
-            padding: 10px;
         }
     }
     
