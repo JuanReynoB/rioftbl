@@ -131,7 +131,7 @@ input{
 
    
 
-/*INDEX GRID AREA */
+/*INDEX GRID AREA
 
     .contenedor{
         display:grid;
@@ -165,8 +165,9 @@ input{
     .footer{
         grid-area: redes;
     }
+    */
     
-    /* INDEX MEDIA TABLET */
+    /* INDEX MEDIA TABLET 
 
     @media screen and (min-width:768px){
        .contenedor-logo{
@@ -216,9 +217,10 @@ input{
             grid-area: redes;
         }
         
-    } 
+    } <
+    */
         
-    /* INDEX MEDIA DESKTOP */
+    /* INDEX MEDIA DESKTOP 
 
     @media screen and (min-width:1024px){
         .contenedor-logo{
@@ -309,7 +311,7 @@ input{
         
         
     }
-        
+        */
 
 
 
