@@ -13,14 +13,12 @@ body{
 }
 
 .navegacion{
-    display: inline-block;
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .menu li{
-    display: inline-block;
-    position: relative;
-    padding: 5px;
+    
     transform: translate(-20px);
     }
 
