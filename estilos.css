@@ -14,12 +14,12 @@ body{
 
 .navegacion{
     display: inline-block;
-    position: absolute;
+    position: relative;
 }
 
 .menu li{
     display: inline-block;
-    position: absolute;
+    position: relative;
     padding: 5px;
     transform: translate(-20px);
     }
