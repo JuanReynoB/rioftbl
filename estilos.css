@@ -122,6 +122,9 @@ input{
 .portada-femenino {
     width: 100%;
 }
+.portada-femenino:hover{
+    filter: opacity(0.5);
+}
 
    
 
@@ -383,9 +386,7 @@ input{
             grid-area: redes;
         }
         
-        .portada-femenino:hover{
-            filter: opacity(0.5);
-        }
+        
     }
 */
 
