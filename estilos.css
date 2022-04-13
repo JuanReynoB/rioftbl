@@ -14,9 +14,10 @@ body{
 }
 
 .navegacion{
-    display: inline-block;
-    justify-content: relative;
-    padding: 5px;
+    display: inline;
+    position: absolute;
+    justify-content: flex-end;
+    
 }
 
 .menu li{
