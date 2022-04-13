@@ -15,15 +15,13 @@ body{
 
 
 .navegacion{
-    display: flex;
-    justify-content: flex-end; 
-    position: relative;
+    display: inline-block;
+    position: absolute;
 }
 
 .menu li{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
+    display: inline-block;
+    position: absolute;
     padding: 5px;
     transform: translate(-20px);
     }
