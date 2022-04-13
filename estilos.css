@@ -14,7 +14,7 @@ body{
 }
 
 .navegacion{
-    display: inline;
+    display: inline-block;
     position: absolute;
     justify-content: flex-end;
     
