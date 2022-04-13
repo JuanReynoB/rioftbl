@@ -123,7 +123,7 @@ input{
     margin-top:20px;
 }
 
-/* CSS FEMENINO */
+/* CSS FEMENINO 
 
 .portada-femenino {
     width: 100%;
@@ -131,7 +131,7 @@ input{
 
    
 
-/*INDEX GRID AREA*/
+/*INDEX GRID AREA
 
     .contenedor{
         display:grid;
@@ -166,7 +166,7 @@ input{
         grid-area: redes;
     }
     
-    /* INDEX MEDIA TABLET */
+    /* INDEX MEDIA TABLET 
 
     @media screen and (min-width:768px){
        .contenedor-logo{
@@ -216,9 +216,9 @@ input{
             grid-area: redes;
         }
         
-    }
+    } 
         
-    /* INDEX MEDIA DESKTOP */
+    /* INDEX MEDIA DESKTOP
 
     @media screen and (min-width:1024px){
         .contenedor-logo{
@@ -314,7 +314,7 @@ input{
 
 
 
-    /* FEMENINO GRID AREAS*/
+    /* FEMENINO GRID AREAS
 
     .posiciones-femenino{
         display: grid;
@@ -345,7 +345,7 @@ input{
         grid-area: redes;
     }
 
-    /* FEMENINO MEDIA TABLET */
+    /* FEMENINO MEDIA TABLET 
 
     @media screen and (min-width:768px){
         .contenedor-logo{
@@ -391,7 +391,7 @@ input{
     }
 
 
-/*FEMENINO MEDIA DESKTOP */
+/*FEMENINO MEDIA DESKTOP 
 
     @media screen and (min-width:1024px){
         .contenedor-femenino{
@@ -422,3 +422,8 @@ input{
         }
     }
     
+    */
+
+    .logo{
+       font-family: 'Times New Roman', Times, serif;
+    }
