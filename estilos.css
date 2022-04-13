@@ -6,18 +6,17 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 
-.logo{
+/*.logo{
     display: flex;
     justify-content: flex-start;
     position: relative;
     transform: translate(20px);
 }
 
-
-
 .menu li{
         transform: translate(-20px);
     }
+*/
 
 .imagen-portada{
     width:100%;
@@ -233,7 +232,7 @@ input{
             justify-content: flex-end;
         }
 */
-        .menu li{
+        /*.menu li{
         transform: translate(-20px);
         }
 
@@ -241,7 +240,7 @@ input{
             background-color: white;
             color: black;
         }
-
+        */
         .h2-informacion:hover{
             font-size: 50px;
             background-color: #ffd700;
