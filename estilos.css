@@ -12,8 +12,6 @@ body{
     position: relative;
 }
 
-
-
 .navegacion{
     display: inline-block;
     position: absolute;
@@ -178,11 +176,12 @@ input{
            align-items: center;
        }      
 */
-       .navegacion{
+       /* .navegacion{
            display: flex; 
            justify-content: flex-end;
            transform: translate(0, 10px, 0, 0);
        }
+       */
 
         
 
@@ -231,11 +230,11 @@ input{
             align-items: center;
         }      
  */
-        .navegacion{
+       /* .navegacion{
             display: flex; 
             justify-content: flex-end;
         }
-
+*/
         .menu li{
         transform: translate(-20px);
         }
