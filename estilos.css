@@ -8,19 +8,19 @@ body{
 
 .logo{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 
 
 .navegacion{
     display: flex;
-    justify-content: center; 
+    justify-content: flex-end; 
 }
 
 .menu li{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 5px;
     transform: translate(-20px);
     }
@@ -437,3 +437,5 @@ input{
         position: relative;
         justify-content: flex-end;
     }
+
+    
