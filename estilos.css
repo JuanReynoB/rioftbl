@@ -28,6 +28,10 @@ li{
     color: aliceblue;
 }
 
+.li a:hover{
+    background-color: white;
+    color:black;
+}
 
 
 .imagen-portada{
