@@ -10,11 +10,13 @@ body{
     display: flex;
     justify-content: flex-start;
     position: relative;
+    transform: translate(20px);
 }
 
 .navegacion{
-    display: flex;
-    justify-content: flex-end;
+    display: inline-block;
+    justify-content: relative;
+    padding: 5px;
 }
 
 .menu li{
