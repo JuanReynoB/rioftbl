@@ -14,10 +14,7 @@ body{
 }
 
 .navegacion{
-    display: inline;
-    position: absolute;
-    justify-content: flex-end;
-    
+   
 }
 
 .menu li{
