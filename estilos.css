@@ -9,6 +9,7 @@ body{
 .logo{
     display: flex;
     justify-content: flex-start;
+    position: relative;
 }
 
 
@@ -16,11 +17,13 @@ body{
 .navegacion{
     display: flex;
     justify-content: flex-end; 
+    position: relative;
 }
 
 .menu li{
     display: flex;
     justify-content: flex-end;
+    position: relative;
     padding: 5px;
     transform: translate(-20px);
     }
@@ -176,7 +179,7 @@ input{
            grid-template-rows: 80%;
            align-items: center;
        }      
-
+*/
        .navegacion{
            display: flex; 
            justify-content: flex-end;
@@ -186,7 +189,7 @@ input{
         
 
        
-        .contenedor{
+       /* .contenedor{
         grid-template-columns: 100%;
         grid-template-areas: 
         "header"
@@ -229,7 +232,7 @@ input{
             grid-template-rows: 80%;
             align-items: center;
         }      
- 
+ */
         .navegacion{
             display: flex; 
             justify-content: flex-end;
@@ -278,7 +281,7 @@ input{
            filter: opacity(0.5);
        }
        
-        .contenedor{
+       /* .contenedor{
         grid-template-columns: 100%;
         grid-template-areas: 
         "header"
@@ -316,7 +319,7 @@ input{
 
 
 
-    /* FEMENINO GRID AREAS */
+    /* FEMENINO GRID AREAS 
 
     .posiciones-femenino{
         display: grid;
@@ -346,8 +349,9 @@ input{
     .footer{
         grid-area: redes;
     }
+    */
 
-    /* FEMENINO MEDIA TABLET */
+    /* FEMENINO MEDIA TABLET 
 
     @media screen and (min-width:768px){
         .contenedor-logo{
@@ -391,9 +395,9 @@ input{
             filter: opacity(0.5);
         }
     }
+*/
 
-
-/*FEMENINO MEDIA DESKTOP */
+/*FEMENINO MEDIA DESKTOP 
 
     @media screen and (min-width:1024px){
         .contenedor-femenino{
@@ -426,16 +430,6 @@ input{
     
     */
 
-    .logo{
-        display: flex;
-        position: relative;
-        justify-content: flex-start;
-    }
-
-    .navegacion{
-        display: flex;
-        position: relative;
-        justify-content: flex-end;
-    }
+    
 
     
