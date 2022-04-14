@@ -21,17 +21,10 @@ body{
 .navegacion{
     display: flex;
     justify-content: flex-end;
-    background-color: black;
+    
 }
 
-li{
-    color: aliceblue;
-}
 
-.li a:hover{
-    background-color: white;
-    color:black;
-}
 
 
 .imagen-portada{
