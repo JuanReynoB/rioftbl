@@ -119,13 +119,8 @@ input{
     width: 100%;
 }
 
-.posiciones-masculino{
-    display: inline-block;
-    position: relative;
-    margin-left: 550px;
-}
 
-.contenedor-posiciones-femenino{
+.contenedor-posiciones-masculino{
     display: grid;
     justify-content: center;
 }
