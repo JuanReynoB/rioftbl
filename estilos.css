@@ -303,30 +303,30 @@ input{
 
     /* FEMENINO GRID AREAS*/
 
-    .posiciones-femenino{
+    .contenedor-femenino{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
-        "navegacion-femenino"
+        "navegacion"
         "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
+        "imagen-femenino"
+        "contenedor-posiciones-femenino"
         "redes"
         ;
     }
 
-    .header-femenino{
+    .header{
         grid-area: navegacion;
     }
     .main-femenino{
         grid-area: intro-femenino;
     }
     .main-femenino{
-        grid-area: portada-femenino;
+        grid-area: imagen-femenino;
     }
     .main-femenino{
-        grid-area: posiciones-femenino;
+        grid-area: contenedor-posiciones-femenino;
     }
     .footer{
         grid-area: redes;
@@ -341,7 +341,7 @@ input{
             grid-template-rows: 80%;
         }
 
-        .navegacion{
+        .navegacion-femenino{
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -356,23 +356,23 @@ input{
         grid-template-areas: 
         "navegacion"
         "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
+        "imagen-femenino"
+        "contenedor-posiciones-femenino"
         "redes-femenino"
         ;
         }
         
-        .header-femenino{
+        .header{
             grid-area: navegacion;
         }
         .main-femenino{
             grid-area: intro-femenino;
         }
         .main-femenino{
-            grid-area: portada-femenino;
+            grid-area: imagen-femenino;
         }
         .main-femenino{
-            grid-area: posiciones-femenino; 
+            grid-area: contenedor-posiciones-femenino; 
         }
         .footer-femenino{
             grid-area: redes;
@@ -398,7 +398,7 @@ input{
         ;
         }
         
-        .header-femenino{
+        .header{
             grid-area: navegacion;
         }
         .main-femenino{
@@ -415,38 +415,39 @@ input{
         }
     }
 
-     /* MASCULINO GRID AREAS
+     /* MASCULINO GRID AREAS */
 
-     .posiciones-femenino{
+     .contenedor-masculino{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
-        "navegacion-femenino"
-        "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
+        "navegacion"
+        "intro-masculino"
+        "imagen-masculino"
+        "contenedor-posiciones-masculino"
         "redes"
         ;
     }
 
-    .header-femenino{
+    .header{
         grid-area: navegacion;
     }
-    .main-femenino{
-        grid-area: intro-femenino;
+    .main-masculino{
+        grid-area: intro-masculino;
     }
-    .main-femenino{
-        grid-area: portada-femenino;
+    .main-masculino{
+        grid-area: imagen-masculino;
     }
-    .main-femenino{
-        grid-area: posiciones-femenino;
+    .main-masculino{
+        grid-area: contenedor-posiciones-maculino;
     }
     .footer{
         grid-area: redes;
     }
 
-    /* FEMENINO MEDIA TABLET 
+
+    /* MASCULINO MEDIA TABLET */
 
     @media screen and (min-width:768px){
         .contenedor-logo{
@@ -455,7 +456,7 @@ input{
             grid-template-rows: 80%;
         }
 
-        .navegacion{
+        .navegacion-masculino{
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -465,68 +466,66 @@ input{
             display: inline-block;
         }
         
-        .contenedor-femenino{
+        .contenedor-masculino{
         grid-template-columns: 100%;
         grid-template-areas: 
         "navegacion"
-        "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
-        "redes-femenino"
+        "intro-masculino"
+        "imagen-masculino"
+        "contenedor-posiciones-masculino"
+        "redes-masculino"
         ;
         }
         
-        .header-femenino{
+        .header{
             grid-area: navegacion;
         }
-        .main-femenino{
-            grid-area: intro-femenino;
+        .main-masculino{
+            grid-area: intro-masculino;
         }
-        .main-femenino{
-            grid-area: portada-femenino;
+        .main-masculino{
+            grid-area: imagen-masculino;
         }
-        .main-femenino{
-            grid-area: posiciones-femenino; 
+        .main-masculino{
+            grid-area: contenedor-posiciones-masculino; 
         }
-        .footer-femenino{
+        .footer-masculino{
             grid-area: redes;
         }
         
-        .portada-femenino:hover{
+        .portada-masculino:hover{
             filter: opacity(0.5);
         }
     }
 
-
-/*FEMENINO MEDIA DESKTOP 
+/* MASCULINO MEDIA DESKTOP */
 
     @media screen and (min-width:1024px){
-        .contenedor-femenino{
+        .contenedor-masculino{
         grid-template-columns: 100%;
         grid-template-areas: 
         "navegacion"
-        "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
-        "redes-femenino"
+        "intro-masculino"
+        "imagen-masculino"
+        "posiciones-masculino"
+        "redes-masculino"
         ;
         }
         
-        .header-femenino{
+        .header{
             grid-area: navegacion;
         }
-        .main-femenino{
-            grid-area: intro-femenino;
+        .main-masculino{
+            grid-area: intro-masculino;
         }
-        .main-femenino{
-            grid-area: portada-femenino;
+        .main-masculino{
+            grid-area: imagen-masculino;
         }
-        .main-femenino{
-            grid-area: posiciones-femenino; 
+        .main-masculino{
+            grid-area: contenedor-posiciones-femenino; 
         }
-        .footer-femenino{
+        .footer-masculino{
             grid-area: redes;
         }
     }
     
-    */
