@@ -1,6 +1,6 @@
 
 body{
-    background-color: black;
+    background-color: white;
     font-family: 'Montserrat Alternates', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
@@ -12,9 +12,9 @@ body{
 }
 
 
-
 .navegacion{
     display: flex;
+    flex-direction: column;
     justify-content: center; 
 }
 
@@ -231,6 +231,7 @@ input{
  
         .navegacion{
             display: flex; 
+            flex-direction: row;
             justify-content: flex-end;
         }
 
