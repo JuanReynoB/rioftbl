@@ -177,12 +177,11 @@ input{
        }      
 
        .navegacion{
-           display: flex; 
+           display: flex;
+           flex-direction: row;
            justify-content: flex-end;
-           transform: translate(0, 10px, 0, 0);
        }
 
-        
 
        
         .contenedor{
@@ -355,6 +354,12 @@ input{
             grid-template-rows: 80%;
         }
 
+        .navegacion{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        
         .menu li{
             display: inline-block;
         }
