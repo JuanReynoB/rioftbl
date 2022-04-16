@@ -414,4 +414,14 @@ input{
         .footer-femenino{
             grid-area: redes;
         }
+
+        .contenedor-logo{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 80%;
+        }
+
+        .menu li{
+            display: inline-block;
+        }
     }
