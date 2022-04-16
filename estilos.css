@@ -122,6 +122,10 @@ input{
     justify-content: center;
 }
 
+.footer-femenino{
+    display: flex;
+    justify-content: center;
+}
 /*CSS PAGINA MASCULINO*/
 
 .portada-masculino {
