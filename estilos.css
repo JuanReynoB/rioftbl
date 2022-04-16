@@ -218,6 +218,38 @@ input{
             align-items: center;
         }      
  
+        .contenedor{
+            grid-template-columns: 100%;
+            grid-template-areas: 
+            "header"
+            "portada"
+            "banner"
+            "femenino"
+            "masculino"
+            "redes"
+            ;
+            }
+            
+            .header{
+                grid-area: header;
+            }
+            .main{
+                grid-area:portada;
+            }
+            .main{
+                grid-area: banner;
+            }
+            .main{
+                grid-area: femenino; 
+            }
+            .main{
+                grid-area: masculino;
+            }
+            .footer{
+                grid-area: redes;
+            }
+            
+
         .navegacion{
             display: flex; 
             flex-direction: row;
@@ -267,36 +299,6 @@ input{
            filter: opacity(0.5);
        }
        
-        .contenedor{
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "header"
-        "portada"
-        "banner"
-        "femenino"
-        "masculino"
-        "redes"
-        ;
-        }
-        
-        .header{
-            grid-area: header;
-        }
-        .main{
-            grid-area:portada;
-        }
-        .main{
-            grid-area: banner;
-        }
-        .main{
-            grid-area: femenino; 
-        }
-        .main{
-            grid-area: masculino;
-        }
-        .footer{
-            grid-area: redes;
-        }
         
         
     }
