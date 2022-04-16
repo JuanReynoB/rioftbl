@@ -94,7 +94,7 @@ input{
 
 /* CSS FEMENINO */
 
-.portada-femenino {
+.imagen-femenino {
     width: 100%;
 }
 
@@ -115,7 +115,7 @@ input{
     justify-content: center;
 }
 
-.portada-masculino{
+.imagen-masculino{
     width: 100%;
 }
 
@@ -312,25 +312,25 @@ input{
         grid-template-areas:
         "navegacion"
         "intro-femenino"
-        "portada-femenino"
+        "imagen-femenino"
         "contenedor-posiciones-femenino"
         "redes"
         ;
     }
 
-    .header{
+    .header-femenino{
         grid-area: navegacion;
     }
     .main-femenino{
         grid-area: intro-femenino;
     }
     .main-femenino{
-        grid-area: portada-femenino;
+        grid-area: imagen-femenino;
     }
     .main-femenino{
         grid-area: contenedor-posiciones-femenino;
     }
-    .footer-femenino{
+    .footer{
         grid-area: redes;
     }
 
@@ -358,9 +358,9 @@ input{
         grid-template-areas: 
         "navegacion"
         "intro-femenino"
-        "portada-femenino"
+        "imagen-femenino"
         "contenedor-posiciones-femenino"
-        "redes"
+        "redes-femenino"
         ;
         }
         
@@ -371,7 +371,7 @@ input{
             grid-area: intro-femenino;
         }
         .main-femenino{
-            grid-area: portada-femenino;
+            grid-area: imagen-femenino;
         }
         .main-femenino{
             grid-area: contenedor-posiciones-femenino; 
@@ -394,7 +394,7 @@ input{
         grid-template-areas: 
         "navegacion"
         "intro-femenino"
-        "portada-femenino"
+        "imagen-femenino"
         "contenedor-posiciones-femenino"
         "redes-femenino"
         ;
@@ -417,118 +417,4 @@ input{
         }
     }
 
-     /* MASCULINO GRID AREAS
-
-     .posiciones-femenino{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas:
-        "navegacion-femenino"
-        "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
-        "redes"
-        ;
-    }
-
-    .header-femenino{
-        grid-area: navegacion;
-    }
-    .main-femenino{
-        grid-area: intro-femenino;
-    }
-    .main-femenino{
-        grid-area: portada-femenino;
-    }
-    .main-femenino{
-        grid-area: posiciones-femenino;
-    }
-    .footer{
-        grid-area: redes;
-    }
-
-    /* FEMENINO MEDIA TABLET 
-
-    @media screen and (min-width:768px){
-        .contenedor-logo{
-            display: grid;
-            grid-template-columns: 20% 80%;
-            grid-template-rows: 80%;
-        }
-
-        .navegacion{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-
-        .menu li{
-            display: inline-block;
-        }
-        
-        .contenedor-femenino{
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "navegacion"
-        "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
-        "redes-femenino"
-        ;
-        }
-        
-        .header-femenino{
-            grid-area: navegacion;
-        }
-        .main-femenino{
-            grid-area: intro-femenino;
-        }
-        .main-femenino{
-            grid-area: portada-femenino;
-        }
-        .main-femenino{
-            grid-area: posiciones-femenino; 
-        }
-        .footer-femenino{
-            grid-area: redes;
-        }
-        
-        .portada-femenino:hover{
-            filter: opacity(0.5);
-        }
-    }
-
-
-/*FEMENINO MEDIA DESKTOP 
-
-    @media screen and (min-width:1024px){
-        .contenedor-femenino{
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "navegacion"
-        "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
-        "redes-femenino"
-        ;
-        }
-        
-        .header-femenino{
-            grid-area: navegacion;
-        }
-        .main-femenino{
-            grid-area: intro-femenino;
-        }
-        .main-femenino{
-            grid-area: portada-femenino;
-        }
-        .main-femenino{
-            grid-area: posiciones-femenino; 
-        }
-        .footer-femenino{
-            grid-area: redes;
-        }
-    }
     
-    */
