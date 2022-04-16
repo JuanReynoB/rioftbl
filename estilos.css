@@ -94,7 +94,7 @@ input{
 
 /* CSS FEMENINO */
 
-.portada-femenino {
+.imagen-femenino {
     width: 100%;
 }
 
@@ -341,7 +341,7 @@ input{
             grid-template-rows: 80%;
         }
 
-        .navegacion-femenino{
+        .navegacion{
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -362,7 +362,7 @@ input{
         ;
         }
         
-        .header-femenino{
+        .header{
             grid-area: navegacion;
         }
         .main-femenino{
@@ -392,13 +392,13 @@ input{
         grid-template-areas: 
         "navegacion"
         "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
+        "imagen-femenino"
+        "contenedor-posiciones-femenino"
         "redes-femenino"
         ;
         }
         
-        .header-femenino{
+        .header{
             grid-area: navegacion;
         }
         .main-femenino{
@@ -408,7 +408,7 @@ input{
             grid-area: portada-femenino;
         }
         .main-femenino{
-            grid-area: posiciones-femenino; 
+            grid-area: contenedor-posiciones-femenino; 
         }
         .footer-femenino{
             grid-area: redes;
