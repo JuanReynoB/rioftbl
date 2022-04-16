@@ -22,7 +22,7 @@ body{
     justify-content: center;
     padding: 5px;
     transform: translate(-20px);
-    }
+}
 
 .imagen-portada{
     width:100%;
@@ -122,6 +122,12 @@ input{
 .contenedor-posiciones-masculino{
     display: flex;
     justify-content: center;
+}
+
+/* CSS INFORMACION */
+
+.contenedor-informacion{
+    
 }
    
 /*INDEX GRID AREA*/
