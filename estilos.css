@@ -50,18 +50,11 @@ body{
     justify-content: center;
 }
 
-.imagen-femenino{
-    width: 100%;
-}
 
-.imagen-masculino{
-    width: 100%;
-}
 
-.contenedor-posiciones-femenino{
-    display: grid;
-    justify-content: center;
-}
+
+
+
 
 h1{
    
@@ -85,11 +78,7 @@ a{
     color: aliceblue;
 }
 
-.posiciones-masculino{
-    display: inline-block;
-    position: relative;
-    margin-left: 550px;
-}
+
 footer{
     color:aliceblue;
     text-align: center;
@@ -125,6 +114,20 @@ input{
     width: 100%;
 }
 
+.contenedor-posiciones-femenino{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-femenino{
+    width: 100%;
+}
+
+/*CSS MASCULINO*/
+.contenedor-posiciones-masculino{
+    display: flex;
+    justify-content: center;
+}
    
 
 /*INDEX GRID AREA*/
