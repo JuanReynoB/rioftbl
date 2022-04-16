@@ -118,15 +118,9 @@ input{
 }
 
 .contenedor-posiciones-femenino{
-    display: flex;
+    display: grid;
     justify-content: center;
 }
-
-.posiciones-femenino{
-    display: flex;
-    justify-content: center;
-}
-
 
 /*CSS PAGINA MASCULINO*/
 
@@ -139,11 +133,6 @@ input{
     justify-content: center;
 }
 
-.posiciones-masculino{
-    display: flex;
-    justify-content: center;
-}
-   
 
 /*INDEX GRID AREA*/
 
