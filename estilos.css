@@ -317,20 +317,20 @@ input{
 
     /* FEMENINO GRID AREAS*/
 
-    .posiciones-femenino{
+    .contenedor-femenino{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
-        "navegacion-femenino"
+        "navegacion"
         "intro-femenino"
         "portada-femenino"
-        "posiciones-femenino"
+        "contenedor-posiciones-femenino"
         "redes"
         ;
     }
 
-    .header-femenino{
+    .header{
         grid-area: navegacion;
     }
     .main-femenino{
@@ -340,7 +340,7 @@ input{
         grid-area: portada-femenino;
     }
     .main-femenino{
-        grid-area: posiciones-femenino;
+        grid-area: contenedor-posiciones-femenino;
     }
     .footer{
         grid-area: redes;
@@ -365,12 +365,12 @@ input{
         "navegacion"
         "intro-femenino"
         "portada-femenino"
-        "posiciones-femenino"
+        "contenedor-posiciones-femenino"
         "redes-femenino"
         ;
         }
         
-        .header-femenino{
+        .header{
             grid-area: navegacion;
         }
         .main-femenino{
@@ -380,7 +380,7 @@ input{
             grid-area: portada-femenino;
         }
         .main-femenino{
-            grid-area: posiciones-femenino; 
+            grid-area: contenedor-posiciones-femenino; 
         }
         .footer-femenino{
             grid-area: redes;
@@ -401,12 +401,12 @@ input{
         "navegacion"
         "intro-femenino"
         "portada-femenino"
-        "posiciones-femenino"
+        "contenedor-posiciones-femenino"
         "redes-femenino"
         ;
         }
         
-        .header-femenino{
+        .header{
             grid-area: navegacion;
         }
         .main-femenino{
@@ -416,7 +416,7 @@ input{
             grid-area: portada-femenino;
         }
         .main-femenino{
-            grid-area: posiciones-femenino; 
+            grid-area: contenedor-posiciones-femenino; 
         }
         .footer-femenino{
             grid-area: redes;
