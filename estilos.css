@@ -139,7 +139,7 @@ input{
     justify-content: center;
 }
 
-posiciones-masculino{
+.posiciones-masculino{
     display: flex;
     justify-content: center;
 }
