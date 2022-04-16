@@ -22,7 +22,7 @@ body{
     justify-content: center;
     padding: 5px;
     transform: translate(-20px);
-}
+    }
 
 .imagen-portada{
     width:100%;
@@ -122,12 +122,6 @@ input{
 .contenedor-posiciones-masculino{
     display: flex;
     justify-content: center;
-}
-
-/* CSS INFORMACION */
-
-.contenedor-informacion{
-    
 }
    
 /*INDEX GRID AREA*/
@@ -322,7 +316,7 @@ input{
         ;
     }
 
-    .header{
+    .header-femenino{
         grid-area: navegacion;
     }
     .main-femenino{
@@ -368,7 +362,7 @@ input{
         ;
         }
         
-        .header{
+        .header-femenino{
             grid-area: navegacion;
         }
         .main-femenino{
@@ -404,7 +398,7 @@ input{
         ;
         }
         
-        .header{
+        .header-femenino{
             grid-area: navegacion;
         }
         .main-femenino{
@@ -421,39 +415,38 @@ input{
         }
     }
 
-     /* MASCULINO GRID AREAS */
+     /* MASCULINO GRID AREAS
 
-     .contenedor-masculino{
+     .posiciones-femenino{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
-        "navegacion"
-        "intro-masculino"
-        "imagen-masculino"
-        "contenedor-posiciones-masculino"
+        "navegacion-femenino"
+        "intro-femenino"
+        "portada-femenino"
+        "posiciones-femenino"
         "redes"
         ;
     }
 
-    .header{
+    .header-femenino{
         grid-area: navegacion;
     }
-    .main-masculino{
-        grid-area: intro-masculino;
+    .main-femenino{
+        grid-area: intro-femenino;
     }
-    .main-masculino{
-        grid-area: imagen-masculino;
+    .main-femenino{
+        grid-area: portada-femenino;
     }
-    .main-masculino{
-        grid-area: contenedor-posiciones-maculino;
+    .main-femenino{
+        grid-area: posiciones-femenino;
     }
     .footer{
         grid-area: redes;
     }
 
-
-    /* MASCULINO MEDIA TABLET */
+    /* FEMENINO MEDIA TABLET 
 
     @media screen and (min-width:768px){
         .contenedor-logo{
@@ -462,7 +455,7 @@ input{
             grid-template-rows: 80%;
         }
 
-        .navegacion-masculino{
+        .navegacion{
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -472,66 +465,68 @@ input{
             display: inline-block;
         }
         
-        .contenedor-masculino{
+        .contenedor-femenino{
         grid-template-columns: 100%;
         grid-template-areas: 
         "navegacion"
-        "intro-masculino"
-        "imagen-masculino"
-        "contenedor-posiciones-masculino"
-        "redes-masculino"
+        "intro-femenino"
+        "portada-femenino"
+        "posiciones-femenino"
+        "redes-femenino"
         ;
         }
         
-        .header{
+        .header-femenino{
             grid-area: navegacion;
         }
-        .main-masculino{
-            grid-area: intro-masculino;
+        .main-femenino{
+            grid-area: intro-femenino;
         }
-        .main-masculino{
-            grid-area: imagen-masculino;
+        .main-femenino{
+            grid-area: portada-femenino;
         }
-        .main-masculino{
-            grid-area: contenedor-posiciones-masculino; 
+        .main-femenino{
+            grid-area: posiciones-femenino; 
         }
-        .footer-masculino{
+        .footer-femenino{
             grid-area: redes;
         }
         
-        .portada-masculino:hover{
+        .portada-femenino:hover{
             filter: opacity(0.5);
         }
     }
 
-/* MASCULINO MEDIA DESKTOP */
+
+/*FEMENINO MEDIA DESKTOP 
 
     @media screen and (min-width:1024px){
-        .contenedor-masculino{
+        .contenedor-femenino{
         grid-template-columns: 100%;
         grid-template-areas: 
         "navegacion"
-        "intro-masculino"
-        "imagen-masculino"
-        "posiciones-masculino"
-        "redes-masculino"
+        "intro-femenino"
+        "portada-femenino"
+        "posiciones-femenino"
+        "redes-femenino"
         ;
         }
         
-        .header{
+        .header-femenino{
             grid-area: navegacion;
         }
-        .main-masculino{
-            grid-area: intro-masculino;
+        .main-femenino{
+            grid-area: intro-femenino;
         }
-        .main-masculino{
-            grid-area: imagen-masculino;
+        .main-femenino{
+            grid-area: portada-femenino;
         }
-        .main-masculino{
-            grid-area: contenedor-posiciones-femenino; 
+        .main-femenino{
+            grid-area: posiciones-femenino; 
         }
-        .footer-masculino{
+        .footer-femenino{
             grid-area: redes;
         }
     }
     
+    */
