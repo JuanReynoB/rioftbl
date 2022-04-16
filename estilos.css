@@ -11,11 +11,6 @@ body{
     justify-content: center;
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> RamaCambios
 .navegacion{
     display: flex;
     flex-direction: column;
@@ -36,7 +31,7 @@ body{
 
 .imagen-banner{
     width:100%;
-    width:100%;
+    height:100%;
 }
 
 .h2-informacion{
@@ -99,7 +94,7 @@ input{
 
 /* CSS FEMENINO */
 
-.imagen-femenino {
+.portada-femenino {
     width: 100%;
 }
 
@@ -113,16 +108,7 @@ input{
     justify-content: center;
 }
 
-/* CSS MASCULINO */
 
-.h2-masculino{
-    display: flex;
-    justify-content: center;
-}
-
-.imagen-masculino{
-    width: 100%;
-}
 
 .contenedor-posiciones-masculino{
     display: flex;
@@ -317,20 +303,20 @@ input{
         grid-template-areas:
         "navegacion"
         "intro-femenino"
-        "imagen-femenino"
+        "portada-femenino"
         "contenedor-posiciones-femenino"
         "redes"
         ;
     }
 
-    .header-femenino{
+    .header{
         grid-area: navegacion;
     }
     .main-femenino{
         grid-area: intro-femenino;
     }
     .main-femenino{
-        grid-area: imagen-femenino;
+        grid-area: portada-femenino;
     }
     .main-femenino{
         grid-area: contenedor-posiciones-femenino;
@@ -363,7 +349,7 @@ input{
         grid-template-areas: 
         "navegacion"
         "intro-femenino"
-        "imagen-femenino"
+        "portada-femenino"
         "contenedor-posiciones-femenino"
         "redes-femenino"
         ;
@@ -376,7 +362,7 @@ input{
             grid-area: intro-femenino;
         }
         .main-femenino{
-            grid-area: imagen-femenino;
+            grid-area: portada-femenino;
         }
         .main-femenino{
             grid-area: contenedor-posiciones-femenino; 
@@ -399,7 +385,7 @@ input{
         grid-template-areas: 
         "navegacion"
         "intro-femenino"
-        "imagen-femenino"
+        "portada-femenino"
         "contenedor-posiciones-femenino"
         "redes-femenino"
         ;
