@@ -229,6 +229,38 @@ input{
     /* INDEX MEDIA DESKTOP */
 
     @media screen and (min-width:1024px){
+
+        .contenedor{
+            grid-template-columns: 100%;
+            grid-template-areas: 
+            "header"
+            "portada"
+            "banner"
+            "femenino"
+            "masculino"
+            "redes"
+            ;
+            }
+            
+            .header{
+                grid-area: header;
+            }
+            .main{
+                grid-area:portada;
+            }
+            .main{
+                grid-area: banner;
+            }
+            .main{
+                grid-area: femenino; 
+            }
+            .main{
+                grid-area: masculino;
+            }
+            .footer{
+                grid-area: redes;
+            }
+
         .contenedor-logo{
             display: grid;
             grid-template-columns: 20% 80%;
@@ -275,6 +307,14 @@ input{
         .imagen-banner:hover{
             filter: opacity(0.5);
         }
+
+        .imagen-femenino:hover{
+            filter: opacity(0.5);
+        }
+
+        .imagen-masculino:hover{
+            filter: opacity(0.5);
+        }
        
         .portada-femenino:hover{
             filter: opacity(0.5);
@@ -286,36 +326,7 @@ input{
  
        
        
-        .contenedor{
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "header"
-        "portada"
-        "banner"
-        "femenino"
-        "masculino"
-        "redes"
-        ;
-        }
         
-        .header{
-            grid-area: header;
-        }
-        .main{
-            grid-area:portada;
-        }
-        .main{
-            grid-area: banner;
-        }
-        .main{
-            grid-area: femenino; 
-        }
-        .main{
-            grid-area: masculino;
-        }
-        .footer{
-            grid-area: redes;
-        }
         
         
     }
