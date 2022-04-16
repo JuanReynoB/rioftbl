@@ -111,19 +111,19 @@ input{
     margin-top:20px;
 }
 
-/* CSS FEMENINO */
+/* CSS PAGINA FEMENINO */
 
 .portada-femenino {
     width: 100%;
 }
 
 .contenedor-posiciones-femenino{
-    display: grid;
+    display: flex;
     justify-content: center;
 }
 
 
-/*CSS MASCULINO*/
+/*CSS PAGINA MASCULINO*/
 
 .portada-masculino {
     width: 100%;
