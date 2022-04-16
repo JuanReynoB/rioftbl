@@ -119,8 +119,8 @@ input{
 
 .contenedor-posiciones-femenino{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100% 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
     justify-content: center;
 }
 
@@ -133,8 +133,8 @@ input{
 
 .contenedor-posiciones-masculino{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100% 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
     justify-content: center;
 }
 
