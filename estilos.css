@@ -124,6 +124,12 @@ input{
     justify-content: center;
 }
 
+.h1-torneo-femenino:hover{
+    background-color: white;
+    color: black;
+    font-size: 50px;
+}
+
 
 /*CSS PAGINA MASCULINO*/
 
@@ -136,6 +142,12 @@ input{
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     justify-content: center;
+}
+
+.h1-torneo-masculino:hover{
+    background-color: white;
+    color: black;
+    font-size: 50px;
 }
 
 
