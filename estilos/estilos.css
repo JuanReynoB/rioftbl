@@ -126,7 +126,6 @@ input{
 
 
 
-
 /*CSS PAGINA MASCULINO*/
 
 .portada-masculino {
@@ -139,8 +138,6 @@ input{
     grid-template-rows: auto auto;
     justify-content: center;
 }
-
-
 
 
 /*INDEX GRID AREA*/
