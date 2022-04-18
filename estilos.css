@@ -124,11 +124,7 @@ input{
     justify-content: center;
 }
 
-.h1-torneo-femenino:hover{
-    background-color: white;
-    color: black;
-    font-size: 50px;
-}
+
 
 
 /*CSS PAGINA MASCULINO*/
@@ -144,11 +140,7 @@ input{
     justify-content: center;
 }
 
-.h1-torneo-masculino:hover{
-    background-color: white;
-    color: black;
-    font-size: 50px;
-}
+
 
 
 /*INDEX GRID AREA*/
@@ -202,7 +194,7 @@ input{
            transform: translate(0, 10px, 0, 0);
        }
 
-        
+               
 
        
         .contenedor{
@@ -337,6 +329,7 @@ input{
             filter: opacity(0.5);
         }
      
+       
     }
 
     /* FEMENINO GRID AREAS*/
@@ -450,6 +443,12 @@ input{
 
         .menu li{
             display: inline-block;
+        }
+
+        .h1-torneo-femenino:hover{
+            background-color: white;
+            color: black;
+            font-size: 50px;
         }
     }
 
