@@ -23,7 +23,7 @@
     
 }
 
-.navbar {
+.navbar .navbar-expand-lg .navbar-light .bg-light {
     background-color: black;
     color: aliceblue;
 }
@@ -33,6 +33,8 @@
     display: flex;
     justify-content: center;
 }
+
+
 
 
 .imagen-portada {
