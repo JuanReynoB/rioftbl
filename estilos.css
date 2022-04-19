@@ -133,6 +133,10 @@ input{
     filter: opacity(0.5);
 }
 
+.table{
+    display: grid;
+    justify-content: center;
+}
    
 
 /*INDEX GRID AREA
