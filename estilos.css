@@ -28,6 +28,12 @@
     color: aliceblue;
 }
 
+.navbar-toggler{
+    color:aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
 
 .imagen-portada {
     width: 100%;
