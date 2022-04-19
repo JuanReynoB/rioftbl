@@ -23,7 +23,7 @@ body{
         justify-content: center;    
 }
 
-.navbar navbar-expand-lg navbar-light bg-light{
+.navbar{
     background-color: black;
     color:aliceblue;
 }
@@ -176,7 +176,7 @@ input{
     /* INDEX MEDIA TABLET */
 
     @media screen and (min-width:768px){
-       .navegacion{
+       .navbar{
            display: grid;
            justify-content: flex-end; 
            background-color: black;
@@ -188,12 +188,12 @@ input{
            justify-content: flex-end;
            transform: translate(0, 10px, 0, 0);
        }
-       */
+       
 
         
 
        
-       /* .contenedor{
+        .contenedor{
         grid-template-columns: 100%;
         grid-template-areas: 
         "header"
@@ -224,13 +224,13 @@ input{
             grid-area: redes;
         }
         
-    } <
+    } 
     */
         
     /* INDEX MEDIA DESKTOP */
 
     @media screen and (min-width:1024px){
-        .navegacion{
+        .navbar{
                 display: grid;
                 justify-content: flex-end; 
                 background-color: black;
@@ -242,7 +242,7 @@ input{
             display: flex; 
             justify-content: flex-end;
         }
-*/
+
         /*.menu li{
         transform: translate(-20px);
         }
@@ -319,12 +319,12 @@ input{
         
         
     }
-        */
+        
 
 
 
 
-    /* FEMENINO GRID AREAS 
+    FEMENINO GRID AREAS 
 
     .posiciones-femenino{
         display: grid;
@@ -354,9 +354,9 @@ input{
     .footer{
         grid-area: redes;
     }
-    */
+   
 
-    /* FEMENINO MEDIA TABLET 
+     FEMENINO MEDIA TABLET 
 
     @media screen and (min-width:768px){
         .contenedor-logo{
@@ -398,9 +398,9 @@ input{
         
         
     }
-*/
 
-/*FEMENINO MEDIA DESKTOP 
+
+FEMENINO MEDIA DESKTOP 
 
     @media screen and (min-width:1024px){
         .contenedor-femenino{
@@ -432,7 +432,3 @@ input{
     }
     
     */
-
-    
-
-    
