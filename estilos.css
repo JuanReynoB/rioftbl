@@ -20,10 +20,12 @@ body{
 
 .navegacion{
     display: flex;
-        justify-content: center;
-        background-color: black;
-        color:aliceblue;
-    
+        justify-content: center;    
+}
+
+.navbar navbar-expand-lg navbar-light bg-light{
+    background-color: black;
+    color:aliceblue;
 }
 
 
@@ -172,16 +174,16 @@ input{
     }
     */
     
-    /* INDEX MEDIA TABLET 
+    /* INDEX MEDIA TABLET */
 
     @media screen and (min-width:768px){
-       .contenedor-logo{
+       .navegacion{
            display: grid;
-           grid-template-columns: 20% 80%;
-           grid-template-rows: 80%;
-           align-items: center;
+           justify-content: flex-end; 
+           background-color: black;
+           color:aliceblue;
        }      
-*/
+
        /* .navegacion{
            display: flex; 
            justify-content: flex-end;
@@ -226,16 +228,17 @@ input{
     } <
     */
         
-    /* INDEX MEDIA DESKTOP 
+    /* INDEX MEDIA DESKTOP */
 
     @media screen and (min-width:1024px){
-        .contenedor-logo{
-            display: grid;
-            grid-template-columns: 20% 80%;
-            grid-template-rows: 80%;
-            align-items: center;
+        .navegacion{
+                display: grid;
+                justify-content: flex-end; 
+                background-color: black;
+                color:aliceblue;
+            }      
         }      
- */
+ 
        /* .navegacion{
             display: flex; 
             justify-content: flex-end;
