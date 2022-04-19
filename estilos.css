@@ -63,10 +63,10 @@
     width: 100%;
 }
 
-.contenedor-posiciones-femenino {
+/*.contenedor-posiciones-femenino {
     display: grid;
     justify-content: center;
-}
+}*/
 
 h1 {
 
@@ -185,13 +185,14 @@ input {
 @media screen and (min-width:768px) {
 
     .navegacion {
-        background-color: black;
-        color: aliceblue;
+        
+        display: flex;
+        justify-content: flex-end;
     }
 
     .navbar {
-        display: flex;
-        justify-content: flex-end;
+        background-color: black;
+        color: aliceblue;
     }
 
 }
@@ -245,13 +246,14 @@ input {
 @media screen and (min-width:1024px) {
 
     .navegacion {
-        background-color: black;
-        color: aliceblue;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .navbar {
-        display: flex;
-        justify-content: flex-end;
+        
+        background-color: black;
+        color: aliceblue;
     }
 
 
