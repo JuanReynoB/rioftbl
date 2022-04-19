@@ -261,7 +261,11 @@ input {
 
 @media screen and (min-width:1024px) {
 
-    .container-fluid{
+    .navbar.navbar-expand-lg.navbar-light.bg-light{
+        background-color: black;
+    }
+    
+    .container-fluid a{
         background-color: black;
         color:aliceblue
     }
@@ -273,11 +277,7 @@ input {
         justify-content: flex-end;
     }
 
-    .navbar {
-        
-        background-color: black;
-        color: aliceblue;
-    }
+    
 
 
 
