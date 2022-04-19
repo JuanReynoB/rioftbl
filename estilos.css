@@ -1,5 +1,4 @@
-
-body{
+.container-fluid {
     background-color: black;
     font-family: 'Montserrat Alternates', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -18,111 +17,116 @@ body{
     }
 */
 
-.navegacion{
-    
-        background-color: black;
-    color:aliceblue;
+.navegacion {
+    background-color: black;
+    color: aliceblue;
 }
 
-.navbar{
-    display: flex;
-        justify-content: center;    
-    
-}
-
-
-.imagen-portada{
-    width:100%;
-    height:100%;
-}
-
-.imagen-banner{
-    width:100%;
-    width:100%;
-}
-
-.h2-informacion{
+.navbar {
     display: flex;
     justify-content: center;
+
 }
 
-.h2-femenino{
-    display: flex;
-    justify-content: center;
-    
+
+.imagen-portada {
+    width: 100%;
+    height: 100%;
 }
 
-.h2-masculino{
-    display: flex;
-    justify-content: center;
-}
-
-.imagen-femenino{
+.imagen-banner {
+    width: 100%;
     width: 100%;
 }
 
-.imagen-masculino{
+.h2-informacion {
+    display: flex;
+    justify-content: center;
+}
+
+.h2-femenino {
+    display: flex;
+    justify-content: center;
+
+}
+
+.h2-masculino {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-femenino {
     width: 100%;
 }
 
-.contenedor-posiciones-femenino{
+.imagen-masculino {
+    width: 100%;
+}
+
+.contenedor-posiciones-femenino {
     display: grid;
     justify-content: center;
 }
 
-h1{
-   
+h1 {
+
     text-align: center;
     color: aliceblue;
 }
 
-h2{
+h2 {
     text-align: center;
     color: aliceblue;
 }
 
-p, table {
-    color:aliceblue;
+p,
+table {
+    color: aliceblue;
     text-align: center;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
     color: aliceblue;
 }
 
-.posiciones-masculino{
+.posiciones-masculino {
     display: inline-block;
     position: relative;
     margin-left: 550px;
 }
-footer{
-    color:aliceblue;
+
+footer {
+    color: aliceblue;
     text-align: center;
 }
+
 .formulario {
     color: aliceblue;
     display: inline-block;
     position: relative;
     margin-left: 500px;
-    }
+}
 
-.button{
+.button {
     width: 20px;
 }
-input{
-   width: 300px;
-  }
-.mensaje{
-    height:100px;
+
+input {
+    width: 300px;
 }
 
-.redes{
+.mensaje {
+    height: 100px;
+}
+
+.redes {
     display: inline;
     position: relative;
     width: 25px;
     height: 25px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 /* CSS FEMENINO */
@@ -130,11 +134,12 @@ input{
 .portada-femenino {
     width: 100%;
 }
-.portada-femenino:hover{
+
+.portada-femenino:hover {
     filter: opacity(0.5);
 }
 
-.tabla-posiciones-femenino{
+.tabla-posiciones-femenino {
     display: flex;
     justify-content: center;
 }
@@ -174,24 +179,24 @@ input{
         grid-area: redes;
     }
     */
-    
-    /* INDEX MEDIA TABLET */
 
-    @media screen and (min-width:768px){
-      
-        .navegacion{
-            background-color: black;
-            color:aliceblue;
-        }
+/* INDEX MEDIA TABLET */
 
-        .navbar{
-           display: flex;
-           justify-content: flex-end; 
-       }      
+@media screen and (min-width:768px) {
 
-       
+    .navegacion {
+        background-color: black;
+        color: aliceblue;
+    }
 
-       /* .navegacion{
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+/* .navegacion{
            display: flex; 
            justify-content: flex-end;
            transform: translate(0, 10px, 0, 0);
@@ -234,23 +239,60 @@ input{
         
     } 
     */
-        
-    /* INDEX MEDIA DESKTOP */
 
-    @media screen and (min-width:1024px){
+/* INDEX MEDIA DESKTOP */
 
-        .navegacion{
-            background-color: black;
-            color:aliceblue;
-        }
+@media screen and (min-width:1024px) {
 
-        .navbar{
-                display: flex;
-                justify-content: flex-end; 
-                }      
-        }      
- 
-       /* .navegacion{
+    .navegacion {
+        background-color: black;
+        color: aliceblue;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+
+    .h2-informacion:hover {
+        font-size: 50px;
+        background-color: #ffd700;
+        color: white;
+    }
+
+    .h2-femenino:hover {
+        font-size: 50px;
+        background-color: rgb(1, 1, 105);
+        color: white;
+    }
+
+    .h2-masculino:hover {
+        font-size: 50px;
+        background-color: rgb(1, 102, 1);
+        color: white;
+    }
+
+    .imagen-portada:hover {
+        filter: opacity(0.5);
+    }
+
+    .imagen-banner:hover {
+        filter: opacity(0.5);
+    }
+
+    .imagen-femenino:hover {
+        filter: opacity(0.5);
+    }
+
+    .imagen-masculino:hover {
+        filter: opacity(0.5);
+    }
+
+}
+
+/* .navegacion{
             display: flex; 
             justify-content: flex-end;
         }
@@ -264,41 +306,7 @@ input{
             color: black;
         }
         */
-        .h2-informacion:hover{
-            font-size: 50px;
-            background-color: #ffd700;
-            color: white;
-        }
-        
-        .h2-femenino:hover{
-            font-size: 50px;
-            background-color: rgb(1, 1, 105);
-            color: white;
-        }
-
-        .h2-masculino:hover{
-            font-size: 50px;
-            background-color: rgb(1, 102, 1);
-            color: white;
-        }
-
-        .imagen-portada:hover{
-            filter: opacity(0.5);
-        }
-
-        .imagen-banner:hover{
-            filter: opacity(0.5);
-        }
-       
-        .imagen-femenino:hover{
-            filter: opacity(0.5);
-        }
- 
-       .imagen-masculino:hover{
-           filter: opacity(0.5);
-       }
-       
-       /* .contenedor{
+/* .contenedor{
         grid-template-columns: 100%;
         grid-template-areas: 
         "header"
@@ -442,5 +450,3 @@ FEMENINO MEDIA DESKTOP
             grid-area: redes;
         }
     }
-    
-    */
