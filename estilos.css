@@ -1,4 +1,4 @@
-body {
+.contenedor-body {
     background-color: black;
     font-family: 'Montserrat Alternates', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -28,7 +28,7 @@ body {
     color: aliceblue;
 }
 
-.navbar-toggler{
+.navbar-toggler-icon{
     color:aliceblue;
     display: flex;
     justify-content: center;
