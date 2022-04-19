@@ -20,8 +20,9 @@ body{
 
 .navegacion{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+        justify-content: center;
+        background-color: black;
+        color:aliceblue;
     
 }
 
@@ -76,8 +77,6 @@ h2{
     color: aliceblue;
 }
 
-
-
 p, table {
     color:aliceblue;
     text-align: center;
@@ -87,7 +86,6 @@ a{
     text-decoration: none;
     color: aliceblue;
 }
-
 
 .posiciones-masculino{
     display: inline-block;
@@ -114,7 +112,6 @@ input{
 .mensaje{
     height:100px;
 }
-
 
 .redes{
     display: inline;
