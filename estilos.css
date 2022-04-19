@@ -17,6 +17,11 @@
     }
 */
 
+.contenedor-header{
+background-color: black;
+color:aliceblue;
+}
+
 .navegacion {
     display: flex;
     justify-content: center;
