@@ -132,11 +132,10 @@ input{
     filter: opacity(0.5);
 }
 
-.table{
-    display: grid;
+.tabla-posiciones-femenino{
+    display: flex;
     justify-content: center;
 }
-   
 
 /*INDEX GRID AREA
 
