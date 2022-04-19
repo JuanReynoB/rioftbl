@@ -17,10 +17,7 @@
     }
 */
 
-.contenedor-header{
-background-color: black;
-color:aliceblue;
-}
+
 
 .navegacion {
     display: flex;
@@ -263,6 +260,11 @@ input {
 /* INDEX MEDIA DESKTOP */
 
 @media screen and (min-width:1024px) {
+
+    .contenedor-header{
+        background-color: black;
+        color:aliceblue;
+        }
 
     .navegacion {
         display: flex;
