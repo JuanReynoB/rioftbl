@@ -18,14 +18,14 @@
 */
 
 .navegacion {
-    background-color: black;
-    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-
+    background-color: black;
+    color: aliceblue;
 }
 
 
