@@ -264,14 +264,13 @@ input {
     .navbar.navbar-expand-lg.navbar-light.bg-light{
         background-color: black;
     }
-    
+
     .container-fluid a{
         background-color: black;
         color:aliceblue
     }
        
-        
-
+    
     .navegacion {
         display: flex;
         justify-content: flex-end;
@@ -475,3 +474,11 @@ FEMENINO MEDIA DESKTOP
             grid-area: redes;
         }
     }
+*/
+    @media screen and (min-width:768px) {
+
+    .tabla-posiciones-femenino{
+        display: flex;
+        justify-content: center;
+    }
+}
