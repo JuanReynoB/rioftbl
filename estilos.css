@@ -261,10 +261,12 @@ input {
 
 @media screen and (min-width:1024px) {
 
-    .contenedor-header{
+    .navbar.navbar-expand-lg.navbar-light.bg-light{
         background-color: black;
-        color:aliceblue;
-        }
+        color:aliceblue
+    }
+       
+        
 
     .navegacion {
         display: flex;
