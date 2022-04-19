@@ -19,13 +19,15 @@ body{
 */
 
 .navegacion{
-    display: flex;
-        justify-content: center;    
+    
+        background-color: black;
+    color:aliceblue;
 }
 
 .navbar{
-    background-color: black;
-    color:aliceblue;
+    display: flex;
+        justify-content: center;    
+    
 }
 
 
@@ -176,12 +178,18 @@ input{
     /* INDEX MEDIA TABLET */
 
     @media screen and (min-width:768px){
-       .navbar{
-           display: grid;
+      
+        .navegacion{
+            background-color: black;
+            color:aliceblue;
+        }
+
+        .navbar{
+           display: flex;
            justify-content: flex-end; 
-           background-color: black;
-           color:aliceblue;
        }      
+
+       
 
        /* .navegacion{
            display: flex; 
@@ -230,12 +238,16 @@ input{
     /* INDEX MEDIA DESKTOP */
 
     @media screen and (min-width:1024px){
+
+        .navegacion{
+            background-color: black;
+            color:aliceblue;
+        }
+
         .navbar{
-                display: grid;
+                display: flex;
                 justify-content: flex-end; 
-                background-color: black;
-                color:aliceblue;
-            }      
+                }      
         }      
  
        /* .navegacion{
