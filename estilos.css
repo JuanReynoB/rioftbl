@@ -261,15 +261,7 @@ input {
 
 @media screen and (min-width:1024px) {
 
-    .navbar.navbar-expand-lg.navbar-light.bg-light{
-        background-color: black;
-    }
-
-    .container-fluid a{
-        background-color: black;
-        color:aliceblue
-    }
-       
+   
     
     .navegacion {
         display: flex;
