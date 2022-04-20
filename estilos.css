@@ -154,10 +154,15 @@ input {
     filter: opacity(0.5);
 }
 
+.contenedor-posiciones-femenino{
+    display: flex;
+    justify-content: center;
+}
+
 .tabla-posiciones-femenino {
     display: flex;
     justify-content: center;
-    width: auto;
+   
 }
 
 /*INDEX GRID AREA
