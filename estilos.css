@@ -469,8 +469,10 @@ FEMENINO MEDIA DESKTOP
 
     @media screen and (min-width:768px) {
 
-    .tabla-posiciones-femenino{
-        display: grid;
+    
+
+    .contenedor-posiciones-femenino{
+        display: flex;
         justify-content: center;
     }
 }
