@@ -268,9 +268,6 @@ input {
         justify-content: flex-end;
     }
 
-    
-
-
 
     .h2-informacion:hover {
         font-size: 50px;
@@ -467,9 +464,12 @@ FEMENINO MEDIA DESKTOP
         }
     }
 */
+
+/* FEMENINO MEDIA TABLET */ 
+
     @media screen and (min-width:768px) {
 
-    .tabla-posiciones-femenino{
+    .table{
         display: flex;
         justify-content: center;
     }
