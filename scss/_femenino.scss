@@ -1,3 +1,5 @@
+/* CSS PAGINA FEMENINO */
+
 .portada-femenino {
     width: 100%;
 }
@@ -9,9 +11,10 @@
     justify-content: center;
 }
 
-/* FEMENINO GRID AREAS*/
 
-.contenedor-femenino{
+ /* FEMENINO GRID AREAS*/
+
+ .contenedor-femenino{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto auto;

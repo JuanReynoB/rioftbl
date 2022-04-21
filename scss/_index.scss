@@ -33,3 +33,192 @@
     display: flex;
     justify-content: center;
 }
+
+/*INDEX GRID AREA*/
+
+.contenedor{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "header"
+    "portada"
+    "banner"
+    "femenino"
+    "masculino"
+    "redes"
+    ;
+}
+
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: portada;
+}
+.main{
+    grid-area: banner;
+}
+.main{
+    grid-area: femenino;
+}
+.main{
+    grid-area: masculino;
+}
+.footer{
+    grid-area: redes;
+}
+
+/* INDEX MEDIA TABLET */
+
+@media screen and (min-width:768px){
+   .contenedor-logo{
+       display: grid;
+       grid-template-columns: 20% 80%;
+       grid-template-rows: 80%;
+       align-items: center;
+   }      
+
+   .navegacion{
+       display: flex; 
+       justify-content: flex-end;
+       transform: translate(0, 10px, 0, 0);
+   }
+
+           
+
+   
+    .contenedor{
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "portada"
+    "banner"
+    "femenino"
+    "masculino"
+    "redes"
+    ;
+    }
+    
+    .header{
+        grid-area: header;
+    }
+    .main{
+        grid-area:portada;
+    }
+    .main{
+        grid-area: banner;
+    }
+    .main{
+        grid-area: femenino; 
+    }
+    .main{
+        grid-area: masculino;
+    }
+    .footer{
+        grid-area: redes;
+    }
+    
+    
+}
+    
+/* INDEX MEDIA DESKTOP */
+
+@media screen and (min-width:1024px){
+
+    .contenedor{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "portada"
+        "banner"
+        "femenino"
+        "masculino"
+        "redes"
+        ;
+        }
+        
+        .header{
+            grid-area: header;
+        }
+        .main{
+            grid-area:portada;
+        }
+        .main{
+            grid-area: banner;
+        }
+        .main{
+            grid-area: femenino; 
+        }
+        .main{
+            grid-area: masculino;
+        }
+        .footer{
+            grid-area: redes;
+        }
+
+    .contenedor-logo{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 80%;
+        align-items: center;
+    }      
+
+    .navegacion{
+        display: flex; 
+        justify-content: flex-end;
+    }
+
+    .menu li{
+    transform: translate(-20px);
+    }
+
+    .menu li :hover {
+        background-color: white;
+        color: black;
+    }
+
+    .h2-informacion:hover{
+        font-size: 50px;
+        background-color: #ffd700;
+        color: white;
+    }
+    
+    .h2-femenino:hover{
+        font-size: 50px;
+        background-color: rgb(1, 1, 105);
+        color: white;
+    }
+
+    .h2-masculino:hover{
+        font-size: 50px;
+        background-color: rgb(1, 102, 1);
+        color: white;
+    }
+
+    .imagen-portada:hover{
+        filter: opacity(0.5);
+    }
+
+    .imagen-banner:hover{
+        filter: opacity(0.5);
+    }
+
+    .imagen-femenino:hover{
+        filter: opacity(0.5);
+    }
+
+    .imagen-masculino:hover{
+        filter: opacity(0.5);
+    }
+   
+    .portada-femenino:hover{
+        filter: opacity(0.5);
+    }
+
+    .portada-masculino:hover{
+        filter: opacity(0.5);
+    }
+ 
+   
+}
