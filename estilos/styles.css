@@ -1,3 +1,24 @@
+/* VISTA CELULAR */
+body {
+  background-color: black;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif; }
+
+.logo {
+  display: flex;
+  justify-content: center; }
+
+.navegacion {
+  display: flex;
+  justify-content: center; }
+
+.menu li {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  transform: translate(-20px); }
+
 .imagen-portada {
   width: 100%;
   height: 100%; }
@@ -26,6 +47,156 @@
   display: flex;
   justify-content: center; }
 
+h1 {
+  text-align: center;
+  color: aliceblue; }
+
+h2 {
+  text-align: center;
+  color: aliceblue; }
+
+p, table {
+  color: aliceblue;
+  text-align: center; }
+
+a {
+  text-decoration: none;
+  color: aliceblue; }
+
+footer {
+  color: aliceblue;
+  text-align: center; }
+
+.formulario {
+  color: aliceblue;
+  display: inline-block;
+  position: relative;
+  margin-left: 500px; }
+
+.button {
+  width: 20px; }
+
+input {
+  width: 300px; }
+
+.mensaje {
+  height: 100px; }
+
+.redes {
+  display: inline;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-top: 20px; }
+
+/*INDEX GRID AREA*/
+.contenedor {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "header" "portada" "banner" "femenino" "masculino" "redes"; }
+
+.header {
+  grid-area: header; }
+
+.main {
+  grid-area: portada; }
+
+.main {
+  grid-area: banner; }
+
+.main {
+  grid-area: femenino; }
+
+.main {
+  grid-area: masculino; }
+
+.footer {
+  grid-area: redes; }
+
+/* INDEX MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%;
+    align-items: center; }
+  .navegacion {
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(0, 10px, 0, 0); }
+  .contenedor {
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "portada" "banner" "femenino" "masculino" "redes"; }
+  .header {
+    grid-area: header; }
+  .main {
+    grid-area: portada; }
+  .main {
+    grid-area: banner; }
+  .main {
+    grid-area: femenino; }
+  .main {
+    grid-area: masculino; }
+  .footer {
+    grid-area: redes; } }
+
+/* INDEX MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "portada" "banner" "femenino" "masculino" "redes"; }
+  .header {
+    grid-area: header; }
+  .main {
+    grid-area: portada; }
+  .main {
+    grid-area: banner; }
+  .main {
+    grid-area: femenino; }
+  .main {
+    grid-area: masculino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%;
+    align-items: center; }
+  .navegacion {
+    display: flex;
+    justify-content: flex-end; }
+  .menu li {
+    transform: translate(-20px); }
+  .menu li :hover {
+    background-color: aliceblue;
+    color: black; }
+  .h2-informacion:hover {
+    font-size: 50px;
+    background-color: #ffd700;
+    color: aliceblue; }
+  .h2-femenino:hover {
+    font-size: 50px;
+    background-color: #010169;
+    color: aliceblue; }
+  .h2-masculino:hover {
+    font-size: 50px;
+    background-color: #016601;
+    color: aliceblue; }
+  .imagen-portada:hover {
+    filter: opacity(0.5); }
+  .imagen-banner:hover {
+    filter: opacity(0.5); }
+  .imagen-femenino:hover {
+    filter: opacity(0.5); }
+  .imagen-masculino:hover {
+    filter: opacity(0.5); }
+  .portada-femenino:hover {
+    filter: opacity(0.5); }
+  .portada-masculino:hover {
+    filter: opacity(0.5); } }
+
+/* CSS PAGINA FEMENINO */
 .portada-femenino {
   width: 100%; }
 
@@ -101,71 +272,9 @@
   .menu li {
     display: inline-block; }
   .h1-torneo-femenino:hover {
-    background-color: white;
+    background-color: aliceblue;
     color: black;
     font-size: 50px; } }
-
-body {
-  background-color: black;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Rubik', sans-serif; }
-
-.logo {
-  display: flex;
-  justify-content: center; }
-
-.navegacion {
-  display: flex;
-  justify-content: center; }
-
-.menu li {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  transform: translate(-20px); }
-
-h1 {
-  text-align: center;
-  color: aliceblue; }
-
-h2 {
-  text-align: center;
-  color: aliceblue; }
-
-p, table {
-  color: aliceblue;
-  text-align: center; }
-
-a {
-  text-decoration: none;
-  color: aliceblue; }
-
-footer {
-  color: aliceblue;
-  text-align: center; }
-
-.formulario {
-  color: aliceblue;
-  display: inline-block;
-  position: relative;
-  margin-left: 500px; }
-
-.button {
-  width: 20px; }
-
-input {
-  width: 300px; }
-
-.mensaje {
-  height: 100px; }
-
-.redes {
-  display: inline;
-  position: relative;
-  width: 25px;
-  height: 25px;
-  margin-top: 20px; }
 
 /*CSS PAGINA MASCULINO*/
 .portada-masculino {
@@ -177,7 +286,7 @@ input {
   grid-template-rows: auto auto;
   justify-content: center; }
 
-/* SEGUIR POR: MASCULINO GRID AREAS
+/* FEMENINO GRID AREAS (esto va a ser masculino)
 
      .posiciones-femenino{
         display: grid;

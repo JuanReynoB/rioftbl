@@ -2,121 +2,6 @@
 @import "index";
 @import "femenino";
 
-body{
-    background-color:black;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Rubik', sans-serif;
-}
-
-.logo{
-    display: flex;
-    justify-content: center;
-}
-
-.navegacion{
-    display: flex;
-    justify-content: center; 
-}
-
-.menu li{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    transform: translate(-20px);
-    }
-
-.imagen-portada{
-    width:100%;
-    height:100%;
-}
-
-.imagen-banner{
-    width:100%;
-    height:100%;
-}
-
-.imagen-femenino{
-    width: 100%;
-    height: 100%;
-}
-
-.imagen-masculino{
-    width: 100%;
-    height: 100%;
-}
-
-.h2-informacion{
-    display: flex;
-    justify-content: center;
-}
-
-.h2-femenino{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.h2-masculino{
-    display: flex;
-    justify-content: center;
-}
-
-h1{
-   
-    text-align: center;
-    color: aliceblue;
-}
-
-h2{
-    text-align: center;
-    color: aliceblue;
-}
-
-p, table {
-    color:aliceblue;
-    text-align: center;
-    
-}
-a{
-    text-decoration: none;
-    color: aliceblue;
-}
-
-footer{
-    color:aliceblue;
-    text-align: center;
-}
-
-.formulario {
-    color: aliceblue;
-    display: inline-block;
-    position: relative;
-    margin-left: 500px;
-    }
-
-.button{
-    width: 20px;
-}
-
-input{
-   width: 300px;
-  }
-
-.mensaje{
-    height:100px;
-}
-
-.redes{
-    display: inline;
-    position: relative;
-    width: 25px;
-    height: 25px;
-    margin-top:20px;
-}
-
-
-
 /*CSS PAGINA MASCULINO*/
 
 .portada-masculino {
@@ -130,12 +15,8 @@ input{
     justify-content: center;
 }
 
-
-
-
     
-
-     /* SEGUIR POR: MASCULINO GRID AREAS
+     /* FEMENINO GRID AREAS (esto va a ser masculino)
 
      .posiciones-femenino{
         display: grid;
@@ -249,3 +130,4 @@ input{
         }
     }
 */
+
