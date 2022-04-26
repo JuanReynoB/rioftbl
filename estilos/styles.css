@@ -274,7 +274,12 @@ input {
   .h1-torneo-femenino:hover {
     background-color: aliceblue;
     color: black;
-    font-size: 50px; } }
+    font-size: 50px; }
+  .contenedor-imagenes-femenino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; } }
 
 /*CSS PAGINA MASCULINO*/
 .portada-masculino {
