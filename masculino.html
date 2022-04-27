@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos\estilos.css">
+    <meta name="keywords" content="futbol, football, femenino, masculino, futbol femenino, rio, brasil, equipo, amigos, amigas">
+    <meta name="description" content="Llego el mejor torneo de futbol para vos y tus amigos a San Isidro">
+    <link rel="stylesheet" href="estilos/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins:wght@200&family=Rubik:wght@300&display=swap"
         rel="stylesheet">
-    <title>RIOFTBL</title>
+    <title>RIO - Masculino</title>
 </head>
+
 <body class="contenedor-masculino">
     <header class="header">  
 
@@ -34,9 +37,12 @@
             </nav>
         </div>
     </header> 
-    <main>
-        <H1 class="h1-torneo-masculino">Torneo Masculino</H1>
-             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+    <main class="main-masculino">
+
+        <div class="intro-masculino">
+            <H1 class="h1-torneo-masculino">Torneo Masculino</H1>
+            <p class="p-masculino">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Facilis praesentium doloribus dolor harum deleniti error,
                 perferendis magni sequi. Nobis commodi delectus, dolores
                 cum deserunt consectetur at autem quam blanditiis qui.
@@ -47,11 +53,20 @@
             </p>
         </div>
 
-        <div>
-            <img class="portada-masculino img-fluid"
-                src="https://images.unsplash.com/photo-1626248801379-51a0748a5f96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                alt="varones" width="100%">
-        </div>
+        <section class="contenedor-imagenes-masculino">
+            <div>
+                <img class="portada-masculino img-fluid" src="https://images.unsplash.com/photo-1624880357913-a8539238245b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="masculino1">
+            </div>
+            <div>
+                <img class="portada-masculino img-fluid" src="https://images.unsplash.com/photo-1624880357913-a8539238245b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="masculino2">
+            </div>
+            <div>
+                <img class="portada-masculino img-fluid" src="https://images.unsplash.com/photo-1624880357913-a8539238245b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="masculino3">
+            </div>
+            <div>
+                <img class="portada-masculino img-fluid" src="https://images.unsplash.com/photo-1624880357913-a8539238245b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="masculino4">
+            </div>
+        </section>
 
         <div class="contenedor-posiciones-masculino">
             <h2>Tabla de posiciones</h2>
@@ -112,17 +127,23 @@
                 </tr>
             </table>
         </div>
-    </main>
 
-    <footer class="footer">
-        <a href="https://es-la.facebook.com/">
-            <img class="redes" src="https://i.pinimg.com/originals/c0/94/4d/c0944d82ebff96a6a5235e7e933e559a.png">
-        <a>
-        <a href="https://www.instagram.com/?hl=es-la">
-            <img class="redes" src="https://i.pinimg.com/564x/1a/db/0e/1adb0e1f5d3800942accbca2422be08e.jpg">
-        </a>
-                <P>Todos los derechos reservados.</P>
-    </footer>
+   
+
+        <footer class="footer">
+            <section class="contenedor-footer">
+                <a href="https://es-la.facebook.com/">
+                    <img class="redes" src="multimedia/facebook.png" target="_blank" alt="logo_facebook">
+                <a>
+                <a href="https://www.instagram.com/?hl=es-la">
+                    <img class="redes" src="multimedia/logoig.png" target="_blank" alt="logo_instagram">
+                </a>
+                <button type="button" class="whatsapp-m">
+                        <a href="https://web.whatsapp.com/" target="_blank"> Escribinos </a>
+                </button>
+            </section>
+            <P>Todos los derechos reservados.</P>        
+        </footer>
 </body>
 
 </html>

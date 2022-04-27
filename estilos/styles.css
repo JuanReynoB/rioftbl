@@ -63,31 +63,34 @@ a {
   text-decoration: none;
   color: aliceblue; }
 
-footer {
+.contenedor-footer {
+  display: flex;
+  justify-content: center; }
+
+.footer {
   color: aliceblue;
   text-align: center; }
 
-.formulario {
-  color: aliceblue;
-  display: inline-block;
+.whatsapp, .whatsapp-f, .whatsapp-m, .whatsapp-i {
+  display: inline;
   position: relative;
-  margin-left: 500px; }
-
-.button {
-  width: 20px; }
-
-input {
-  width: 300px; }
-
-.mensaje {
-  height: 100px; }
+  margin-top: 25px;
+  margin-left: 5px;
+  height: 25px;
+  width: auto;
+  border-radius: 10%;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  border-color: aliceblue;
+  cursor: pointer; }
 
 .redes {
   display: inline;
   position: relative;
   width: 25px;
   height: 25px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding: 5px; }
 
 /*INDEX GRID AREA*/
 .contenedor {
@@ -248,7 +251,12 @@ input {
   .main-femenino {
     grid-area: contenedor-posiciones-femenino; }
   .footer {
-    grid-area: redes; } }
+    grid-area: redes; }
+  .contenedor-imagenes-femenino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; } }
 
 /*FEMENINO MEDIA DESKTOP */
 @media screen and (min-width: 1024px) {
@@ -281,7 +289,7 @@ input {
     grid-template-rows: auto auto;
     grid-gap: 10px; } }
 
-/*CSS PAGINA MASCULINO*/
+/* CSS PAGINA MASCULINO */
 .portada-masculino {
   width: 100%; }
 
@@ -291,117 +299,382 @@ input {
   grid-template-rows: auto auto;
   justify-content: center; }
 
-/* FEMENINO GRID AREAS (esto va a ser masculino)
+/* MASCULINO GRID AREAS*/
+.contenedor-masculino {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
 
-     .posiciones-femenino{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas:
-        "navegacion-femenino"
-        "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
-        "redes"
-        ;
-    }
+.header {
+  grid-area: navegacion; }
 
-    .header-femenino{
-        grid-area: navegacion;
-    }
-    .main-femenino{
-        grid-area: intro-femenino;
-    }
-    .main-femenino{
-        grid-area: portada-femenino;
-    }
-    .main-femenino{
-        grid-area: posiciones-femenino;
-    }
-    .footer{
-        grid-area: redes;
-    }
+.main-masculino {
+  grid-area: intro-masculino; }
 
-    /* FEMENINO MEDIA TABLET 
+.main-masculino {
+  grid-area: portada-masculino; }
 
-    @media screen and (min-width:768px){
-        .contenedor-logo{
-            display: grid;
-            grid-template-columns: 20% 80%;
-            grid-template-rows: 80%;
-        }
+.main-masculino {
+  grid-area: contenedor-posiciones-masculino; }
 
-        .menu li{
-            display: inline-block;
-        }
-        
-        .contenedor-femenino{
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "navegacion"
-        "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
-        "redes-femenino"
-        ;
-        }
-        
-        .header-femenino{
-            grid-area: navegacion;
-        }
-        .main-femenino{
-            grid-area: intro-femenino;
-        }
-        .main-femenino{
-            grid-area: portada-femenino;
-        }
-        .main-femenino{
-            grid-area: posiciones-femenino; 
-        }
-        .footer-femenino{
-            grid-area: redes;
-        }
-        
-    }
+.footer {
+  grid-area: redes; }
 
-/*FEMENINO MEDIA DESKTOP 
+/* AMSCULINO MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-masculino {
+    grid-area: intro-masculino; }
+  .main-masculino {
+    grid-area: portada-masculino; }
+  .main-masculino {
+    grid-area: contenedor-posiciones-masculino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-imagenes-masculino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; }
+  /*MASCULINO MEDIA DESKTOP */ }
 
-    @media screen and (min-width:1024px){
-        .contenedor-femenino{
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "navegacion"
-        "intro-femenino"
-        "portada-femenino"
-        "posiciones-femenino"
-        "redes-femenino"
-        ;
-        }
-        
-        .header-femenino{
-            grid-area: navegacion;
-        }
-        .main-femenino{
-            grid-area: intro-femenino;
-        }
-        .main-femenino{
-            grid-area: portada-femenino;
-        }
-        .main-femenino{
-            grid-area: posiciones-femenino; 
-        }
-        .footer-femenino{
-            grid-area: redes;
-        }
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-masculino {
+    grid-area: intro-masculino; }
+  .main-masculino {
+    grid-area: portada-masculino; }
+  .main-masculino {
+    grid-area: contenedor-posiciones-masculino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .h1-torneo-masculino:hover {
+    background-color: aliceblue;
+    color: black;
+    font-size: 50px; }
+  .contenedor-imagenes-masculino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; } }
 
-        .contenedor-logo{
-            display: grid;
-            grid-template-columns: 20% 80%;
-            grid-template-rows: 80%;
-        }
+/* INFORMACION GRID AREAS*/
+.contenedor-informacion {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "navegacion" "intro-informacion" "mapa" "informacion-reglamento" "redes"; }
 
-        .menu li{
-            display: inline-block;
-        }
-    }
-*/
+.header {
+  grid-area: navegacion; }
+
+.main-informacion {
+  grid-area: intro-informacion; }
+
+.main-informacion {
+  grid-area: mapa; }
+
+.main-informacion {
+  grid-area: informacion-reglamento; }
+
+.footer {
+  grid-area: redes; }
+
+/* INFORMACION MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .contenedor-informacion {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-informacion" "mapa" "informacion-reglamento" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-informacion {
+    grid-area: intro-informacion; }
+  .main-informacion {
+    grid-area: mapa; }
+  .main-femenino {
+    grid-area: informacion-reglamento; }
+  .footer {
+    grid-area: redes; } }
+
+/* INFORMACION MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
+  .contenedor-informacion {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-informacion" "mapa" "informacion-reglamento" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-informacion {
+    grid-area: intro-informacion; }
+  .main-informacion {
+    grid-area: mapa; }
+  .main-informacion {
+    grid-area: informacion-reglamento; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .main-informacion {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    justify-content: center; }
+  .datos-utiles {
+    display: flex;
+    justify-content: center; } }
+
+.main-contacto {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-content: center;
+  text-align: center; }
+
+.formulario-contacto {
+  color: aliceblue;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+/* MAP */
+.h2-:hoverinformacion {
+  background-color: #ffd700; }
+
+.h2-:hoverfemenino {
+  background-color: #010169; }
+
+.h2-:hovermasculino {
+  background-color: #016601; }
+
+/* MAP GET */
+.p-femenino {
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px; }
+
+.p-masculino {
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px; }
+
+/* EXTEND */
+.whatsapp-f {
+  background-color: #010169; }
+
+.whatsapp-m {
+  background-color: #016601; }
+
+.whatsapp-i {
+  background-color: #ffd700; }
+
+/* MIXIN */
+.whatsapp, .whatsapp-f, .whatsapp-m, .whatsapp-i {
+  width: auto;
+  height: 25px;
+  color: black; }
+
+/* CSS PAGINA FEMENINO */
+.contenedor-posiciones-femenino {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-content: center; }
+
+/* FEMENINO GRID AREAS*/
+.contenedor-femenino {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "navegacion" "intro-femenino" "portada-femenino" "contenedor-posiciones-femenino" "redes"; }
+
+.header {
+  grid-area: navegacion; }
+
+.main-femenino {
+  grid-area: intro-femenino; }
+
+.main-femenino {
+  grid-area: portada-femenino; }
+
+.main-femenino {
+  grid-area: contenedor-posiciones-femenino; }
+
+.footer {
+  grid-area: redes; }
+
+/* FEMENINO MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .contenedor-femenino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-femenino" "portada-femenino" "contenedor-posiciones-femenino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-femenino {
+    grid-area: intro-femenino; }
+  .main-femenino {
+    grid-area: portada-femenino; }
+  .main-femenino {
+    grid-area: contenedor-posiciones-femenino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-imagenes-femenino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; } }
+
+/*FEMENINO MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
+  .contenedor-femenino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-femenino" "portada-femenino" "contenedor-posiciones-femenino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-femenino {
+    grid-area: intro-femenino; }
+  .main-femenino {
+    grid-area: portada-femenino; }
+  .main-femenino {
+    grid-area: contenedor-posiciones-femenino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .h1-torneo-femenino:hover {
+    background-color: aliceblue;
+    color: black;
+    font-size: 50px; }
+  .contenedor-imagenes-femenino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; } }
+
+/* CSS PAGINA MASCULINO */
+.portada-masculino {
+  width: 100%; }
+
+.contenedor-posiciones-masculino {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-content: center; }
+
+/* MASCULINO GRID AREAS*/
+.contenedor-masculino {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+
+.header {
+  grid-area: navegacion; }
+
+.main-masculino {
+  grid-area: intro-masculino; }
+
+.main-masculino {
+  grid-area: portada-masculino; }
+
+.main-masculino {
+  grid-area: contenedor-posiciones-masculino; }
+
+.footer {
+  grid-area: redes; }
+
+/* MASCULINO MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-masculino {
+    grid-area: intro-masculino; }
+  .main-masculino {
+    grid-area: portada-masculino; }
+  .main-masculino {
+    grid-area: contenedor-posiciones-masculino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-imagenes-masculino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; }
+  /*MASCULINO MEDIA DESKTOP */ }
+
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-masculino {
+    grid-area: intro-masculino; }
+  .main-masculino {
+    grid-area: portada-masculino; }
+  .main-masculino {
+    grid-area: contenedor-posiciones-masculino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .h1-torneo-masculino:hover {
+    background-color: aliceblue;
+    color: black;
+    font-size: 50px; }
+  .contenedor-imagenes-masculino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; } }

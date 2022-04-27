@@ -80,29 +80,26 @@ a{
     text-decoration: none;
     color: $colorSecundario;
 }
-
-footer{
+.contenedor-footer{
+    display: flex;
+    justify-content: center;
+}
+.footer{
     color:$colorSecundario;
     text-align: center;
 }
-
-.formulario {
-    color: $colorSecundario;
-    display: inline-block;
+.whatsapp{
+    display: inline;
     position: relative;
-    margin-left: 500px;
-    }
-
-.button{
-    width: 20px;
-}
-
-input{
-   width: 300px;
-  }
-
-.mensaje{
-    height:100px;
+    margin-top: 25px;
+    margin-left: 5px;
+    height: 25px;
+    width:auto;
+    border-radius: 10%;
+    background-color: $colorPrincipal;
+    font-family: 'Poppins', sans-serif;
+    border-color: $colorSecundario;
+    cursor: pointer;
 }
 
 .redes{
@@ -111,7 +108,14 @@ input{
     width: 25px;
     height: 25px;
     margin-top:20px;
+    padding: 5px;
+    
+
 }
+
+
+
+
 
 /*INDEX GRID AREA*/
 
@@ -265,13 +269,13 @@ input{
     
     .h2-femenino:hover{
         font-size: 50px;
-        background-color: rgb(1, 1, 105);
+        background-color: #010169;
         color: $colorSecundario;
     }
 
     .h2-masculino:hover{
         font-size: 50px;
-        background-color: rgb(1, 102, 1);
+        background-color: #016601;
         color: $colorSecundario;
     }
 
@@ -298,6 +302,6 @@ input{
     .portada-masculino:hover{
         filter: opacity(0.5);
     }
- 
    
 }
+
