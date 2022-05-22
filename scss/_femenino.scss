@@ -8,6 +8,12 @@
     margin: auto;
 }
 
+.contenedor-posiciones-masculino{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto;
+}
+
 .contenedor-posiciones-femenino{
     display: grid;
     grid-template-columns:auto;
