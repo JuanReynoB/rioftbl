@@ -1,0 +1,862 @@
+/* VISTA CELULAR */
+body {
+  background-color: black;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif; }
+
+.logo {
+  display: flex;
+  justify-content: center; }
+
+.navegacion {
+  display: flex;
+  justify-content: center; }
+
+.menu li {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  transform: translate(-20px); }
+
+.imagen-portada {
+  width: 100%;
+  height: 100%; }
+
+.imagen-banner {
+  width: 100%;
+  height: 100%; }
+
+.imagen-femenino {
+  width: 100%;
+  height: 100%; }
+
+.imagen-masculino {
+  width: 100%;
+  height: 100%; }
+
+.h2-informacion {
+  display: flex;
+  justify-content: center; }
+
+.h2-femenino {
+  display: flex;
+  justify-content: center; }
+
+.h2-masculino {
+  display: flex;
+  justify-content: center; }
+
+h1 {
+  text-align: center;
+  color: aliceblue; }
+
+h2 {
+  text-align: center;
+  color: aliceblue; }
+
+p,
+table {
+  color: aliceblue;
+  text-align: center; }
+
+a {
+  text-decoration: none;
+  color: aliceblue; }
+
+.contenedor-footer {
+  display: flex;
+  justify-content: center; }
+
+.footer {
+  color: aliceblue;
+  text-align: center; }
+
+.whatsapp, .whatsapp-f, .whatsapp-m, .whatsapp-i {
+  display: inline;
+  position: relative;
+  margin-top: 25px;
+  margin-left: 5px;
+  height: 25px;
+  width: auto;
+  border-radius: 10%;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  border-color: aliceblue;
+  cursor: pointer; }
+
+.redes {
+  display: inline;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
+  padding: 5px; }
+
+.predio {
+  width: 100%;
+  height: 100%; }
+
+/*INDEX GRID AREA*/
+.contenedor {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "header" "portada" "banner" "femenino" "masculino" "redes"; }
+
+.header {
+  grid-area: header; }
+
+.main {
+  grid-area: portada; }
+
+.main {
+  grid-area: banner; }
+
+.main {
+  grid-area: femenino; }
+
+.main {
+  grid-area: masculino; }
+
+.footer {
+  grid-area: redes; }
+
+/* INDEX MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%;
+    align-items: center; }
+  .navegacion {
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(0, 10px, 0, 0); }
+  .contenedor {
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "portada" "banner" "femenino" "masculino" "redes"; }
+  .header {
+    grid-area: header; }
+  .main {
+    grid-area: portada; }
+  .main {
+    grid-area: banner; }
+  .main {
+    grid-area: femenino; }
+  .main {
+    grid-area: masculino; }
+  .footer {
+    grid-area: redes; } }
+
+/* INDEX MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "portada" "banner" "femenino" "masculino" "redes"; }
+  .header {
+    grid-area: header; }
+  .main {
+    grid-area: portada; }
+  .main {
+    grid-area: banner; }
+  .main {
+    grid-area: femenino; }
+  .main {
+    grid-area: masculino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%;
+    align-items: center; }
+  .navegacion {
+    display: flex;
+    justify-content: flex-end; }
+  .menu li {
+    transform: translate(-20px); }
+  .menu li :hover {
+    background-color: aliceblue;
+    color: black; }
+  .h2-informacion:hover {
+    font-size: 50px;
+    background-color: #ffd700;
+    color: aliceblue; }
+  .h2-femenino:hover {
+    font-size: 50px;
+    background-color: #010169;
+    color: aliceblue; }
+  .h2-masculino:hover {
+    font-size: 50px;
+    background-color: #016601;
+    color: aliceblue; }
+  .imagen-portada:hover {
+    filter: opacity(0.5); }
+  .imagen-banner:hover {
+    filter: opacity(0.5); }
+  .imagen-femenino:hover {
+    filter: opacity(0.5); }
+  .imagen-masculino:hover {
+    filter: opacity(0.5); }
+  .portada-femenino:hover {
+    filter: opacity(0.5); }
+  .portada-masculino:hover {
+    filter: opacity(0.5); } }
+
+/* CSS PAGINA FEMENINO */
+.portada-femenino {
+  width: 100%; }
+
+.posiciones-femenino {
+  margin: auto; }
+
+.contenedor-posiciones-femenino {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto; }
+
+.posiciones-femenino {
+  width: 250px;
+  margin: auto;
+  border: solid; }
+
+.fixture-femenino {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  font-size: 12px;
+  padding-left: auto; }
+
+.tabla-fixture-femenino {
+  width: auto;
+  border: solid; }
+
+/* FEMENINO GRID AREAS*/
+.contenedor-femenino {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "navegacion" "intro-femenino" "portada-femenino" "contenedor-posiciones-femenino" "redes"; }
+
+.header {
+  grid-area: navegacion; }
+
+.main-femenino {
+  grid-area: intro-femenino; }
+
+.main-femenino {
+  grid-area: portada-femenino; }
+
+.main-femenino {
+  grid-area: contenedor-posiciones-femenino; }
+
+.footer {
+  grid-area: redes; }
+
+/* FEMENINO MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .contenedor-femenino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-femenino" "portada-femenino" "contenedor-posiciones-femenino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-femenino {
+    grid-area: intro-femenino; }
+  .main-femenino {
+    grid-area: portada-femenino; }
+  .main-femenino {
+    grid-area: contenedor-posiciones-femenino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-imagenes-femenino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; }
+  .contenedor-posiciones-femenino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; }
+  .posiciones-femenino {
+    width: 250px;
+    margin: auto;
+    border: solid; }
+  .fixture-femenino {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    font-size: 16px; }
+  .tabla-fixture-femenino {
+    width: 500px;
+    border: solid; } }
+
+/*FEMENINO MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
+  .contenedor-femenino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-femenino" "portada-femenino" "contenedor-posiciones-femenino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-femenino {
+    grid-area: intro-femenino; }
+  .main-femenino {
+    grid-area: portada-femenino; }
+  .main-femenino {
+    grid-area: contenedor-posiciones-femenino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .h1-torneo-femenino:hover {
+    background-color: aliceblue;
+    color: black;
+    font-size: 50px; }
+  .contenedor-imagenes-femenino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; }
+  .contenedor-p-femenino {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-bottom: 20px; } }
+
+/* CSS PAGINA MASCULINO */
+.portada-masculino {
+  width: 100%; }
+
+.posiciones-masculino {
+  margin: auto; }
+
+.contenedor-posiciones-masculino {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto; }
+
+.posiciones-masculino {
+  width: 250px;
+  margin: auto;
+  border: solid; }
+
+.fixture-masculino {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  font-size: 12px;
+  padding-left: auto; }
+
+.tabla-fixture-masculino {
+  width: auto;
+  border: solid; }
+
+/* MASCULINO GRID AREAS*/
+.contenedor-masculino {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+
+.header {
+  grid-area: navegacion; }
+
+.main-masculino {
+  grid-area: intro-masculino; }
+
+.main-masculino {
+  grid-area: portada-masculino; }
+
+.main-masculino {
+  grid-area: contenedor-posiciones-masculino; }
+
+.footer {
+  grid-area: redes; }
+
+/* MASCULINO MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-masculino {
+    grid-area: intro-masculino; }
+  .main-masculino {
+    grid-area: portada-masculino; }
+  .main-masculino {
+    grid-area: contenedor-posiciones-masculino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-imagenes-masculino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; }
+  .contenedor-posiciones-masculino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; }
+  .posiciones-femenino {
+    width: 250px;
+    margin: auto;
+    border: solid; }
+  .fixture-masculino {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    font-size: 16px; }
+  .tabla-fixture-masculino {
+    width: 500px;
+    border: solid; } }
+
+/*MASCULINO MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-masculino {
+    grid-area: intro-masculino; }
+  .main-masculino {
+    grid-area: portada-masculino; }
+  .main-masculino {
+    grid-area: contenedor-posiciones-masculino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .h1-torneo-masculino:hover {
+    background-color: aliceblue;
+    color: black;
+    font-size: 50px; }
+  .contenedor-imagenes-masculino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; }
+  .contenedor-posiciones {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; }
+  .posiciones-masculino {
+    width: 250px;
+    margin: auto;
+    border: solid; }
+  .fixture-masculino {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    font-size: 16px; }
+  .tabla-fixture-masculino {
+    width: 500px;
+    border: solid; }
+  .contendor-p-masculino {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-bottom: 20px; } }
+
+.informacion-reglamento {
+  margin-top: 50px; }
+
+/* INFORMACION GRID AREAS*/
+.contenedor-informacion {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "navegacion" "intro-informacion" "mapa" "informacion-reglamento" "redes"; }
+
+.header {
+  grid-area: navegacion; }
+
+.main-informacion {
+  grid-area: intro-informacion; }
+
+.main-informacion {
+  grid-area: mapa; }
+
+.main-informacion {
+  grid-area: informacion-reglamento; }
+
+.footer {
+  grid-area: redes; }
+
+/* INFORMACION MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .contenedor-informacion {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-informacion" "mapa" "informacion-reglamento" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-informacion {
+    grid-area: intro-informacion; }
+  .main-informacion {
+    grid-area: mapa; }
+  .main-femenino {
+    grid-area: informacion-reglamento; }
+  .footer {
+    grid-area: redes; } }
+
+/* INFORMACION MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
+  .contenedor-informacion {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-informacion" "mapa" "informacion-reglamento" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-informacion {
+    grid-area: intro-informacion; }
+  .main-informacion {
+    grid-area: mapa; }
+  .main-informacion {
+    grid-area: informacion-reglamento; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .main-informacion {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    justify-content: center; }
+  .datos-utiles {
+    display: flex;
+    justify-content: center; } }
+
+.main-contacto {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-content: center;
+  text-align: center;
+  justify-content: center; }
+
+.formulario-contacto {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  color: aliceblue;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: center; }
+
+.mail, .texto {
+  margin: auto;
+  width: 250px;
+  margin-bottom: 20px; }
+
+.mensaje {
+  height: 200px;
+  width: auto; }
+
+.enviar {
+  margin-top: 20px; }
+
+@media screen and (min-width: 768px) {
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "main-contacto" "intro-informacion" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-contacto {
+    grid-area: main-contacto; }
+  .main-contacto {
+    grid-area: intro-informacion; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .mail, .texto {
+    margin: auto;
+    width: 250px;
+    margin-bottom: 20px; }
+  .mensaje {
+    height: 200px;
+    width: 500px; }
+  .enviar {
+    margin: auto;
+    width: auto;
+    margin-top: 20px; } }
+
+/*FORMULARIO MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "main-contacto" "intro-informacion" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-contacto {
+    grid-area: main-contacto; }
+  .main-contacto {
+    grid-area: intro-informacion; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .mail, .texto {
+    margin-top: 10px;
+    margin: auto;
+    width: 250px;
+    margin-bottom: 20px; }
+  .mensaje {
+    height: 200px;
+    width: 500px; }
+  .enviar {
+    margin: auto;
+    width: auto;
+    margin-top: 20px; } }
+
+/* MAP */
+.h2-:hoverinformacion {
+  background-color: #ffd700; }
+
+.h2-:hoverfemenino {
+  background-color: #010169; }
+
+.h2-:hovermasculino {
+  background-color: #016601; }
+
+/* MAP GET */
+.p-femenino {
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px; }
+
+.p-masculino {
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px; }
+
+/* EXTEND */
+.whatsapp-f {
+  background-color: #010169; }
+
+.whatsapp-m {
+  background-color: #016601; }
+
+.whatsapp-i {
+  background-color: #ffd700; }
+
+/* MIXIN */
+.whatsapp, .whatsapp-f, .whatsapp-m, .whatsapp-i {
+  width: auto;
+  height: 25px;
+  color: black; }
+
+/* CSS PAGINA FEMENINO */
+.contenedor-posiciones-femenino {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-content: center; }
+
+/* FEMENINO GRID AREAS*/
+.contenedor-femenino {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "navegacion" "intro-femenino" "portada-femenino" "contenedor-posiciones-femenino" "redes"; }
+
+.header {
+  grid-area: navegacion; }
+
+.main-femenino {
+  grid-area: intro-femenino; }
+
+.main-femenino {
+  grid-area: portada-femenino; }
+
+.main-femenino {
+  grid-area: contenedor-posiciones-femenino; }
+
+.footer {
+  grid-area: redes; }
+
+/* FEMENINO MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .contenedor-femenino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-femenino" "portada-femenino" "contenedor-posiciones-femenino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-femenino {
+    grid-area: intro-femenino; }
+  .main-femenino {
+    grid-area: portada-femenino; }
+  .main-femenino {
+    grid-area: contenedor-posiciones-femenino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-imagenes-femenino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; } }
+
+/*FEMENINO MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
+  .contenedor-femenino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-femenino" "portada-femenino" "contenedor-posiciones-femenino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-femenino {
+    grid-area: intro-femenino; }
+  .main-femenino {
+    grid-area: portada-femenino; }
+  .main-femenino {
+    grid-area: contenedor-posiciones-femenino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .h1-torneo-femenino:hover {
+    background-color: aliceblue;
+    color: black;
+    font-size: 50px; }
+  .contenedor-imagenes-femenino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; } }
+
+/* CSS PAGINA MASCULINO */
+.portada-masculino {
+  width: 100%; }
+
+/* MASCULINO GRID AREAS*/
+.contenedor-masculino {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+
+.header {
+  grid-area: navegacion; }
+
+.main-masculino {
+  grid-area: intro-masculino; }
+
+.main-masculino {
+  grid-area: portada-masculino; }
+
+.main-masculino {
+  grid-area: contenedor-posiciones-masculino; }
+
+.footer {
+  grid-area: redes; }
+
+/* MASCULINO MEDIA TABLET */
+@media screen and (min-width: 768px) {
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-masculino {
+    grid-area: intro-masculino; }
+  .main-masculino {
+    grid-area: portada-masculino; }
+  .main-masculino {
+    grid-area: contenedor-posiciones-masculino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-imagenes-masculino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; }
+  /*MASCULINO MEDIA DESKTOP */ }
+
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-masculino {
+    grid-area: intro-masculino; }
+  .main-masculino {
+    grid-area: portada-masculino; }
+  .main-masculino {
+    grid-area: contenedor-posiciones-masculino; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .h1-torneo-masculino:hover {
+    background-color: aliceblue;
+    color: black;
+    font-size: 50px; }
+  .contenedor-imagenes-masculino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; } }

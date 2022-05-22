@@ -1,0 +1,136 @@
+.informacion-reglamento{
+    margin-top: 50px;
+}
+
+/* INFORMACION GRID AREAS*/
+
+.contenedor-informacion{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "navegacion"
+    "intro-informacion"
+    "mapa"
+    "informacion-reglamento"
+    "redes"
+    ;
+}
+
+.header{
+    grid-area: navegacion;
+}
+.main-informacion{
+    grid-area: intro-informacion;
+}
+.main-informacion{
+    grid-area: mapa;
+}
+.main-informacion{
+    grid-area: informacion-reglamento;
+}
+.footer{
+    grid-area: redes;
+}
+
+/* INFORMACION MEDIA TABLET */
+
+@media screen and (min-width:768px){
+    .contenedor-logo{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 80%;
+    }
+
+    .menu li{
+        display: inline-block;
+    }
+    
+    .contenedor-informacion{
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "navegacion"
+    "intro-informacion"
+    "mapa"
+    "informacion-reglamento"
+    "redes"
+    ;
+    }
+    
+    .header{
+        grid-area: navegacion;
+    }
+    .main-informacion{
+        grid-area: intro-informacion;
+    }
+    .main-informacion{
+        grid-area: mapa;
+    }
+    .main-femenino{
+        grid-area: informacion-reglamento; 
+    }
+    .footer{
+        grid-area: redes;
+    }
+    
+}
+
+
+
+/* INFORMACION MEDIA DESKTOP */
+
+@media screen and (min-width:1024px){
+    .contenedor-informacion{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "navegacion"
+        "intro-informacion"
+        "mapa"
+        "informacion-reglamento"
+        "redes"
+        ;
+    }
+    
+    .header{
+        grid-area: navegacion;
+    }
+    .main-informacion{
+        grid-area: intro-informacion;
+    }
+    .main-informacion{
+        grid-area: mapa;
+    }
+    .main-informacion{
+        grid-area: informacion-reglamento; 
+    }
+    .footer{
+        grid-area: redes;
+    }
+
+
+
+
+
+    .contenedor-logo{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 80%;
+    }
+
+    .menu li{
+        display: inline-block;
+    }
+
+   
+    .main-informacion{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
+    .datos-utiles{
+        display: flex;
+        justify-content: center;
+    }
+}

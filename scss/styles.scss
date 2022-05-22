@@ -1,0 +1,382 @@
+@import "variables";
+@import "index";
+@import "femenino";
+@import "masculino";
+@import "informacion";
+@import "contacto";
+
+
+
+/* MAP */
+
+$titulosIndex: (informacion: #ffd700,
+    femenino: #010169,
+    masculino: #016601);
+
+@each $titulo,
+$color in $titulosIndex {
+    .h2-:hover#{$titulo} {
+        background-color: $color;
+    }
+}
+
+/* MAP GET */
+
+$estilos:(color: aliceblue,
+    ubicacion: center,
+    fuente: 20px);
+
+.p-femenino {
+    color: map-get($estilos, color);
+    text-align: map-get($estilos, ubicacion);
+    font-size: map-get($estilos, fuente);
+}
+
+.p-masculino {
+    color: map-get($estilos, color);
+    text-align: map-get($estilos, ubicacion);
+    font-size: map-get($estilos, fuente);
+}
+
+/* EXTEND */
+
+
+.whatsapp-f {
+    @extend .whatsapp;
+    background-color: #010169;
+}
+
+.whatsapp-m {
+    @extend .whatsapp;
+    background-color: #016601;
+}
+
+.whatsapp-i {
+    @extend .whatsapp;
+    background-color: #ffd700;
+}
+
+/* MIXIN */
+
+@mixin sizes ($width,$height, $color){
+    width: $width;
+    height: $height;
+    color: $color
+}
+
+.whatsapp{
+    @include sizes (auto, 25px, $colorPrincipal)
+}
+
+/* CSS PAGINA FEMENINO */
+
+.contenedor-posiciones-femenino {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+
+/* FEMENINO GRID AREAS*/
+
+.contenedor-femenino {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "navegacion"
+        "intro-femenino"
+        "portada-femenino"
+        "contenedor-posiciones-femenino"
+        "redes"
+    ;
+}
+
+.header {
+    grid-area: navegacion;
+}
+
+.main-femenino {
+    grid-area: intro-femenino;
+}
+
+.main-femenino {
+    grid-area: portada-femenino;
+}
+
+.main-femenino {
+    grid-area: contenedor-posiciones-femenino;
+}
+
+.footer {
+    grid-area: redes;
+}
+
+/* FEMENINO MEDIA TABLET */
+
+@media screen and (min-width:768px) {
+    .contenedor-logo {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 80%;
+    }
+
+    .menu li {
+        display: inline-block;
+    }
+
+    .contenedor-femenino {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "navegacion"
+            "intro-femenino"
+            "portada-femenino"
+            "contenedor-posiciones-femenino"
+            "redes"
+        ;
+    }
+
+    .header {
+        grid-area: navegacion;
+    }
+
+    .main-femenino {
+        grid-area: intro-femenino;
+    }
+
+    .main-femenino {
+        grid-area: portada-femenino;
+    }
+
+    .main-femenino {
+        grid-area: contenedor-posiciones-femenino;
+    }
+
+    .footer {
+        grid-area: redes;
+    }
+
+    .contenedor-imagenes-femenino {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+    }
+}
+
+
+
+/*FEMENINO MEDIA DESKTOP */
+
+@media screen and (min-width:1024px) {
+    .contenedor-femenino {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "navegacion"
+            "intro-femenino"
+            "portada-femenino"
+            "contenedor-posiciones-femenino"
+            "redes"
+        ;
+    }
+
+    .header {
+        grid-area: navegacion;
+    }
+
+    .main-femenino {
+        grid-area: intro-femenino;
+    }
+
+    .main-femenino {
+        grid-area: portada-femenino;
+    }
+
+    .main-femenino {
+        grid-area: contenedor-posiciones-femenino;
+    }
+
+    .footer {
+        grid-area: redes;
+    }
+
+    .contenedor-logo {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 80%;
+    }
+
+    .menu li {
+        display: inline-block;
+    }
+
+    .h1-torneo-femenino:hover {
+        background-color: $colorSecundario;
+        color: $colorPrincipal;
+        font-size: 50px;
+    }
+
+    .contenedor-imagenes-femenino {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+    }
+
+}
+
+/* CSS PAGINA MASCULINO */
+
+.portada-masculino {
+    width: 100%;
+}
+
+
+/* MASCULINO GRID AREAS*/
+
+.contenedor-masculino {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "navegacion"
+        "intro-masculino"
+        "portada-masculino"
+        "contenedor-posiciones-masculino"
+        "redes"
+    ;
+}
+
+.header {
+    grid-area: navegacion;
+}
+
+.main-masculino {
+    grid-area: intro-masculino;
+}
+
+.main-masculino {
+    grid-area: portada-masculino;
+}
+
+.main-masculino {
+    grid-area: contenedor-posiciones-masculino;
+}
+
+.footer {
+    grid-area: redes;
+}
+
+/* MASCULINO MEDIA TABLET */
+
+@media screen and (min-width:768px) {
+    .contenedor-logo {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 80%;
+    }
+
+    .menu li {
+        display: inline-block;
+    }
+
+    .contenedor-masculino {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "navegacion"
+            "intro-masculino"
+            "portada-masculino"
+            "contenedor-posiciones-masculino"
+            "redes"
+        ;
+    }
+
+    .header {
+        grid-area: navegacion;
+    }
+
+    .main-masculino {
+        grid-area: intro-masculino;
+    }
+
+    .main-masculino {
+        grid-area: portada-masculino;
+    }
+
+    .main-masculino {
+        grid-area: contenedor-posiciones-masculino;
+    }
+
+    .footer {
+        grid-area: redes;
+    }
+
+    .contenedor-imagenes-masculino {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+    }
+
+
+
+    /*MASCULINO MEDIA DESKTOP */
+
+    @media screen and (min-width:1024px) {
+        .contenedor-masculino {
+            grid-template-columns: 100%;
+            grid-template-areas:
+                "navegacion"
+                "intro-masculino"
+                "portada-masculino"
+                "contenedor-posiciones-masculino"
+                "redes"
+            ;
+        }
+
+        .header {
+            grid-area: navegacion;
+        }
+
+        .main-masculino {
+            grid-area: intro-masculino;
+        }
+
+        .main-masculino {
+            grid-area: portada-masculino;
+        }
+
+        .main-masculino {
+            grid-area: contenedor-posiciones-masculino;
+        }
+
+        .footer {
+            grid-area: redes;
+        }
+
+        .contenedor-logo {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 80%;
+        }
+
+        .menu li {
+            display: inline-block;
+        }
+
+        .h1-torneo-masculino:hover {
+            background-color: $colorSecundario;
+            color: $colorPrincipal;
+            font-size: 50px;
+        }
+
+        .contenedor-imagenes-masculino {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 10px;
+        }
+
+    }
+}
+
