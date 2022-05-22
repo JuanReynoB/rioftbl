@@ -328,7 +328,13 @@ a {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    grid-gap: 10px; } }
+    grid-gap: 10px; }
+  .contenedor-p-femenino {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-bottom: 20px; } }
 
 /* CSS PAGINA MASCULINO */
 .portada-masculino {
@@ -476,7 +482,8 @@ a {
     display: grid;
     grid-template-columns: 500px;
     grid-template-rows: auto;
-    justify-content: center; } }
+    justify-content: center;
+    margin-bottom: 20px; } }
 
 .informacion-reglamento {
   margin-top: 50px; }

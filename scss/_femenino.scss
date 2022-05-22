@@ -194,11 +194,12 @@ border: solid;
          grid-gap: 10px;
     }
 
-    .contendor-p-femenino{
+    .contenedor-p-femenino{
         display: grid;
         grid-template-columns: 500px;
         grid-template-rows: auto;
         justify-content: center;
+        margin-bottom: 20px;
      }
 
 }
