@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="futbol, football, femenino, masculino, futbol femenino, rio, brasil, equipo, amigos, amigas, whatsapp, contacto, email, telefono">
+    <meta name="keywords"
+        content="futbol, football, femenino, masculino, futbol femenino, rio, brasil, equipo, amigos, amigas, whatsapp, contacto, email, telefono">
     <meta name="description" content="Llego el mejor torneo de futbol para vos y tus amigos a San Isidro, contactanos!">
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,62 +19,73 @@
 </head>
 
 <body class="contenedor-contacto">
-    <header class="header">  
+    <header class="header">
 
         <div class="contenedor-logo">
             <div class="logo">
                 <a href="index.html">
                     <h1>RIOFTBL</h1>
                 </a>
-            </div>    
-                    
+            </div>
+
             <nav class="navegacion">
                 <ul class="menu">
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="femenino.html">FEMENINO</a></li>
-                    <li><a href="masculino.html">MASCULINO</a></li></li>
-                    <li><a href="informacion.html">INFORMACION</a></li></li>
-                    <li><a href="contacto.html">CONTACTO</a></li></li>
-                    </ul>
+                    <li><a href="masculino.html">MASCULINO</a></li>
+                    <li><a href="informacion.html">INFORMACION</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
             </nav>
         </div>
-    </header> 
+    </header>
     <main class="main-contacto">
-        <h1>Inscribi a tu equipo!</h1>
+        <h2>Inscribi a tu equipo!</h2>
+
+      
+                <form class="formulario-contacto">
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input class="texto" type="text" placeholder="Ingrese su nombre" name="nombre">
+
+                    <label for="email">Correo:</label>
+                    <input class="mail" type="email" placeholder="Ingrese su email" name="email">
+
+                    <label for="msg" >Mensaje:</label>
+                    <input class="mensaje" type="msg" placeholder="Escriba su mensaje">
+
+                    <label for="button"></label>
+                    <input class="enviar" type="submit">
+                </form>
         
-            <form class="formulario-contacto">
-                <label for="nombre">Nombre:</label>
-                <input type="text" placeholder="Ingrese su nombre" name="nombre">
-                <br>
-                <label for="email">Correo:</label>
-                <input type="email" placeholder="Ingrese su email" name="email">
-                <br>
-                <label for="msg" class="mensaje">Mensaje:</label>
-                <input type="msg" placeholder="Escriba su mensaje">
-                <br>
-                <br>
-                <label for="button"></label>
-                <input type="submit">
-            </form>
+      
+
+        <div class="intro-informacion">
+            <h2>Cómo llegar</h2>
+            <p>Nos encontramos a pocos kilómetros de la ciudad. Podés encontrarons en el mapa: 
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0042564823325!2d-3.6905223851041855!3d40.453042761355015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses!2sar!4v1647721484781!5m2!1ses!2sar"
+             width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
     </main>
 
-    
+
     <footer class="footer">
         <section class="contenedor-footer">
             <a href="https://es-la.facebook.com/">
                 <img class="redes" src="multimedia/facebook.png" target="_blank" alt="logo_facebook">
-            <a>
-            <a href="https://www.instagram.com/?hl=es-la">
-                <img class="redes" src="multimedia/logoig.png" target="_blank" alt="logo_instagram">
-            </a>
-            <button type="button" class="whatsapp">
-                    <a href="https://web.whatsapp.com/" target="_blank"> Escribinos </a>
-            </button>
+                <a>
+                    <a href="https://www.instagram.com/?hl=es-la">
+                        <img class="redes" src="multimedia/logoig.png" target="_blank" alt="logo_instagram">
+                    </a>
+                    <button type="button" class="whatsapp">
+                        <a href="https://web.whatsapp.com/" target="_blank"> Escribinos </a>
+                    </button>
         </section>
-        <P>Todos los derechos reservados.</P>        
+        <p>Todos los derechos reservados.</p>
     </footer>
 
-    
+
 </body>
 
 </html>

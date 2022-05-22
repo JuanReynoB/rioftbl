@@ -1,0 +1,144 @@
+.main-contacto{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+  
+}
+.formulario-contacto{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    color: $colorSecundario;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.mail, .texto{
+    margin: auto;
+    width: 250px;   
+    margin-bottom: 20px;
+    }
+    .mensaje{
+        height: 200px;
+        width: auto;
+    }
+
+    .enviar{
+        margin-top: 20px;
+    }
+
+
+@media screen and (min-width:768px){
+    .contenedor-masculino{
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "navegacion"
+    "main-contacto"
+    "intro-informacion"
+    "redes"
+    ;
+    }
+    
+    .header{
+        grid-area: navegacion;
+    }
+    .main-contacto{
+        grid-area: main-contacto;
+    }
+    .main-contacto{
+        grid-area: intro-informacion;
+    }
+
+    .footer{
+        grid-area: redes;
+    }
+
+    .contenedor-logo{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 80%;
+    }
+
+    .menu li{
+        display: inline-block;
+    }
+
+    .mail, .texto{
+    margin: auto;
+    width: 250px;   
+    margin-bottom: 20px;
+    }
+
+    .mensaje{
+        height: 200px;
+        width: 500px;
+    }
+   
+    .enviar{
+    margin: auto;
+    width: auto;  
+    margin-top: 20px;
+
+    }
+}
+
+/*FORMULARIO MEDIA DESKTOP */
+
+@media screen and (min-width:1024px){
+    .contenedor-masculino{
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "navegacion"
+    "main-contacto"
+    "intro-informacion"
+    "redes"
+    ;
+    }
+    
+    .header{
+        grid-area: navegacion;
+    }
+    .main-contacto{
+        grid-area: main-contacto;
+    }
+    .main-contacto{
+        grid-area: intro-informacion;
+    }
+
+    .footer{
+        grid-area: redes;
+    }
+
+    .contenedor-logo{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 80%;
+    }
+
+    .menu li{
+        display: inline-block;
+    }
+
+    .mail, .texto{
+    margin-top: 10px;
+    margin: auto;
+    width: 250px;   
+    margin-bottom: 20px;
+    }
+
+    .mensaje{
+        height: 200px;
+        width: 500px;
+    }
+   
+    .enviar{
+    margin: auto;
+    width: auto;  
+    margin-top: 20px;
+
+    }
+}

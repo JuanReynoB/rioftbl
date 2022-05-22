@@ -55,7 +55,8 @@ h2 {
   text-align: center;
   color: aliceblue; }
 
-p, table {
+p,
+table {
   color: aliceblue;
   text-align: center; }
 
@@ -91,6 +92,10 @@ a {
   height: 25px;
   margin-top: 20px;
   padding: 5px; }
+
+.predio {
+  width: 100%;
+  height: 100%; }
 
 /*INDEX GRID AREA*/
 .contenedor {
@@ -203,11 +208,30 @@ a {
 .portada-femenino {
   width: 100%; }
 
+.posiciones-femenino {
+  margin: auto; }
+
 .contenedor-posiciones-femenino {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto;
-  justify-content: center; }
+  grid-template-rows: auto auto; }
+
+.posiciones-femenino {
+  width: 250px;
+  margin: auto;
+  border: solid; }
+
+.fixture-femenino {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  font-size: 12px;
+  padding-left: auto; }
+
+.tabla-fixture-femenino {
+  width: auto;
+  border: solid; }
 
 /* FEMENINO GRID AREAS*/
 .contenedor-femenino {
@@ -256,7 +280,24 @@ a {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    grid-gap: 10px; } }
+    grid-gap: 10px; }
+  .contenedor-posiciones-femenino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; }
+  .posiciones-femenino {
+    width: 250px;
+    margin: auto;
+    border: solid; }
+  .fixture-femenino {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    font-size: 16px; }
+  .tabla-fixture-femenino {
+    width: 500px;
+    border: solid; } }
 
 /*FEMENINO MEDIA DESKTOP */
 @media screen and (min-width: 1024px) {
@@ -293,11 +334,30 @@ a {
 .portada-masculino {
   width: 100%; }
 
+.posiciones-masculino {
+  margin: auto; }
+
 .contenedor-posiciones-masculino {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto;
-  justify-content: center; }
+  grid-template-rows: auto auto; }
+
+.posiciones-masculino {
+  width: 250px;
+  margin: auto;
+  border: solid; }
+
+.fixture-masculino {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  font-size: 12px;
+  padding-left: auto; }
+
+.tabla-fixture-masculino {
+  width: auto;
+  border: solid; }
 
 /* MASCULINO GRID AREAS*/
 .contenedor-masculino {
@@ -321,7 +381,7 @@ a {
 .footer {
   grid-area: redes; }
 
-/* AMSCULINO MEDIA TABLET */
+/* MASCULINO MEDIA TABLET */
 @media screen and (min-width: 768px) {
   .contenedor-logo {
     display: grid;
@@ -347,9 +407,26 @@ a {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-gap: 10px; }
-  /*MASCULINO MEDIA DESKTOP */ }
+  .contenedor-posiciones-masculino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; }
+  .posiciones-femenino {
+    width: 250px;
+    margin: auto;
+    border: solid; }
+  .fixture-masculino {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    font-size: 16px; }
+  .tabla-fixture-masculino {
+    width: 500px;
+    border: solid; } }
 
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+/*MASCULINO MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
   .contenedor-masculino {
     grid-template-columns: 100%;
     grid-template-areas: "navegacion" "intro-masculino" "portada-masculino" "contenedor-posiciones-masculino" "redes"; }
@@ -377,7 +454,32 @@ a {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    grid-gap: 10px; } }
+    grid-gap: 10px; }
+  .contenedor-posiciones {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; }
+  .posiciones-masculino {
+    width: 250px;
+    margin: auto;
+    border: solid; }
+  .fixture-masculino {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    font-size: 16px; }
+  .tabla-fixture-masculino {
+    width: 500px;
+    border: solid; }
+  .contendor-p-masculino {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: auto;
+    justify-content: center; } }
+
+.informacion-reglamento {
+  margin-top: 50px; }
 
 /* INFORMACION GRID AREAS*/
 .contenedor-informacion {
@@ -458,12 +560,91 @@ a {
   grid-template-columns: auto;
   grid-template-rows: auto;
   align-content: center;
-  text-align: center; }
+  text-align: center;
+  justify-content: center; }
 
 .formulario-contacto {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
   color: aliceblue;
   margin-top: 25px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  justify-content: center; }
+
+.mail, .texto {
+  margin: auto;
+  width: 250px;
+  margin-bottom: 20px; }
+
+.mensaje {
+  height: 200px;
+  width: auto; }
+
+.enviar {
+  margin-top: 20px; }
+
+@media screen and (min-width: 768px) {
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "main-contacto" "intro-informacion" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-contacto {
+    grid-area: main-contacto; }
+  .main-contacto {
+    grid-area: intro-informacion; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .mail, .texto {
+    margin: auto;
+    width: 250px;
+    margin-bottom: 20px; }
+  .mensaje {
+    height: 200px;
+    width: 500px; }
+  .enviar {
+    margin: auto;
+    width: auto;
+    margin-top: 20px; } }
+
+/*FORMULARIO MEDIA DESKTOP */
+@media screen and (min-width: 1024px) {
+  .contenedor-masculino {
+    grid-template-columns: 100%;
+    grid-template-areas: "navegacion" "main-contacto" "intro-informacion" "redes"; }
+  .header {
+    grid-area: navegacion; }
+  .main-contacto {
+    grid-area: main-contacto; }
+  .main-contacto {
+    grid-area: intro-informacion; }
+  .footer {
+    grid-area: redes; }
+  .contenedor-logo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%; }
+  .menu li {
+    display: inline-block; }
+  .mail, .texto {
+    margin-top: 10px;
+    margin: auto;
+    width: 250px;
+    margin-bottom: 20px; }
+  .mensaje {
+    height: 200px;
+    width: 500px; }
+  .enviar {
+    margin: auto;
+    width: auto;
+    margin-top: 20px; } }
 
 /* MAP */
 .h2-:hoverinformacion {
@@ -592,12 +773,6 @@ a {
 /* CSS PAGINA MASCULINO */
 .portada-masculino {
   width: 100%; }
-
-.contenedor-posiciones-masculino {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
-  justify-content: center; }
 
 /* MASCULINO GRID AREAS*/
 .contenedor-masculino {
